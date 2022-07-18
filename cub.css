@@ -4357,18 +4357,18 @@ img {
         justify-content: center;
         flex-direction: row;
         background: #112031;
-        font-size: 0.7em;
+        font-size: 0.6em;
         color: #fff;
         padding: 1em 0 0.5em 0;
     }
 
     .container_A i {
-        font-size: 1.45em;
+        font-size: 1em;
         padding: 0.5em;
     }
 
     #charly {
-        font-size: 1.5em;
+        font-size: 1em;
         color: rgb(9, 214, 241); 
     }
 
@@ -4390,7 +4390,7 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2.2em;
+        font-size: 1.7em;
         font-family: American Typewriter;
         cursor: pointer;
         margin: 0.1em;
