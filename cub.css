@@ -1830,14 +1830,14 @@ img {
 @media all and (max-width: 1000px) {
 
     body {
-        background-color: rgb(100, 320, 20);
+        background-color: rgb(90, 310, 19);
     }
 
     /* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
 
     .section1 {
         width: 100vw;
-        height: 16vh;
+        height: 20vh;
         background-color: #000;
     }
 
@@ -1845,1273 +1845,26 @@ img {
 
     .container_A {
         position: relative;
-        display: flex;
         width: 100%;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        flex-direction: row;
-        background: #112031;
-        font-size: 0.9em;
-        color: #fff;
-        padding: 1em 0 0 1em 0;
-    }
-
-    .container_A i {
-        font-size: 1.2em;
-        padding: 1em;
-    }
-
-    #charly {
-        font-size: 1.2em;
-        color: rgb(9, 214, 241); 
-    }
-
-    .container_A span {
-        width: 100%;
-        height: 100%;
-        background: #efefef;
-        position: absolute;
-        z-index: -1;
-        transition: all 0.5s ease;
-    }
-
-    .container_A div {
-        position: relative;
-        width: auto;
-        background: #112031;
-        color: #555;
-        padding: 0.5em 1em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2.5em;
-        font-family: American Typewriter;
-        cursor: pointer;
-        margin: 0 4px;
-        border-radius: 25px;
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
-        transition: all 0.5s ease;
-    }
-
-    input[type='checkbox'] {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 100%;
-        width: 100%;
-        z-index: 100;
-    }
-
-    input[type='checkbox']:checked ~ span {
-        background: #333;
-    }
-
-    input[type='checkbox']:checked ~ div {
-        box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
-        color: yellow;
-        text-shadow: 0 0 15px yellow, 0 0 25px yellow;
-        animation: glow 5s linear infinite;
-    }
-
-    @keyframes glow {
-        0% {
-        filter: hue-rotate(0deg);
-        }
-        100% {
-        filter: hue-rotate(360deg);
-        }
-    }
-
-    /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
-
-    .section2 {
-        width: 100vw;
-        height: 74vh;
-        background-color: #112031;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         text-align: center;
         justify-content: center;
         flex-direction: row;
-    }
-
-    .section2_A {
-        width: 50vw;
-        height: 72vh;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .section2_B {
-        width: 50vw;
-        height: 72vh;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .titleA {
-        position: absolute;
-        top: 15em;
-        color: #fff;
-    }
-
-    .titleB {
-        position: absolute;
-        top: 15em;
-        color: #fff;
-    }
-
-    .wrapper {
-        border: 1px solid #ffffff;
-        height: 300px;
-        width: 300px;
-        position: absolute;
-    }
-
-    .container {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        perspective: 800px;
-        perspective-origin: 50%;
-    }
-
-    .image-cube {
-        width: 300px;
-        height: 300px;
-        transform-style: preserve-3d;
-        position: relative;
-        transition: 2s;
-    }
-
-    .image-cube div {
-        height: 300px;
-        width: 300px;
-        position: absolute;
-    }
-
-    .image-cubeA {
-        width: 300px;
-        height: 300px;
-        transform-style: preserve-3d;
-        position: relative;
-        transition: 2s;
-    }
-
-    .image-cubeA div {
-        height: 300px;
-        width: 300px;
-        position: absolute;
-    }
-
-    img {
-        width: 100%;
-        height:100%;
-        transform: translateZ(0);
-    }
-
-    .front {
-        transform: translateZ(150px);
-    }
-
-    .right {
-        transform: rotateY(-270deg) translateX(150px);
-        transform-origin: 100% 0;
-    }
-
-    .back {
-        transform: translateZ(-150px) rotateY(180deg);
-    }
-
-    .left {
-        transform: rotateY(270deg) translateX(-150px);
-        transform-origin: 0 50%;
-    }
-
-    .btns {
-        margin-top: 80px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .btns button {
-        background-color: transparent;
-        color: #fff;
-        border: 3px solid #fff;
-        padding: 8px 40px;
-        border-radius: 30px;
-        font-size: 20px;
-        cursor: pointer;
-    }
-    
-
-    /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
-
-    .section3 {
-        width: 100vw;
-        height: 10vh;
-        background-color: #020;
-    }
-
-    /* ** ***** ####################     Text Box Superior    #################### ***** ** */
-
-    .text-box{
-        background:#112031;
-        text-align: center;
-        overflow-x: hidden;
-        height: 10vh;
-        padding: 0.5em 0 0.5em 0;
-    }
-    
-    .text-box h2 {
+        background: #112031;
         font-size: 1.6em;
-        font-weight: 600;
-        font-family: 'Courier New', Courier, monospace;
         color: #fff;
-        position: relative;
-    }
-
-    .text-box h2::before, h2::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-    }
-
-    .text-box h2::before {
-        background: #112031;
-        animation:  type 3s steps(25) 1s forwards infinite;
-        width: 100%;
-        
-    }
-
-    .text-box span {
-        color: rgb(9, 214, 241);
-        font-weight: 900;
-        font-size: 1.3em;
-    }
-    
-    .text-box h2::after {
-        opacity: 1;
-        width: 2px; 
-        background: #fff;
-        color:#fff;
-        animation:  type 3s steps(25) 1s forwards infinite,
-                    blink 0.6s steps(15) infinite;
-    }
-    
-    @keyframes type {
-        to {
-        left: 110%;
-        }
-    }
-    
-    @keyframes blink {
-        0% , 50%{
-        opacity: 0;
-        } 
-        51%, 100% {
-        opacity: 1;
-        }
-    }
-
-}
-
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-/* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############              Escritorio 900            ############## ***** ** */
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-
-@media all and (max-width: 900px) {
-
-    body {
-        background-color: rgb(90, 310, 19);
-    }
-
-               /* ############## *  **     Barra de Navegación    **  * ################ */
-
-               .section1 {
-                width: 100vw;
-                height: 21vh;
-                background-color: #000;
-            }
-        
-            /* Efecto Disco */
-        
-            .container_A {
-                position: relative;
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-                flex-direction: row;
-                background: #112031;
-                font-size: 1em;
-                color: #fff;
-                padding: 1em 0 0.5em 0;
-            }
-        
-            .container_A i {
-                font-size: 1.5em;
-                padding: 0.5em;
-            }
-        
-            #charly {
-                font-size: 1.5em;
-                color: rgb(9, 214, 241); 
-            }
-        
-            .container_A span {
-                width: 100%;
-                height: 100%;
-                background: #efefef;
-                position: absolute;
-                z-index: -1;
-                transition: all 0.5s ease;
-            }
-        
-            .container_A div {
-                position: relative;
-                width: auto;
-                background: #112031;
-                color: #555;
-                padding: 0.25em 1em;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 2.2em;
-                font-family: American Typewriter;
-                cursor: pointer;
-                margin: 0.1em;
-                border-radius: 1em;
-                box-shadow: 0em 0em 0.3em rgba(0, 0, 0, 1);
-                transition: all 0.5s ease;
-            }
-        
-            input[type='checkbox'] {
-                position: absolute;
-                opacity: 0;
-                cursor: pointer;
-                height: 100%;
-                width: 100%;
-                z-index: 100;
-            }
-        
-            input[type='checkbox']:checked ~ span {
-                background: #333;
-            }
-        
-            input[type='checkbox']:checked ~ div {
-                box-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.5);
-                color: yellow;
-                text-shadow: 0em 0em 1em yellow, 0em 0em 1em yellow;
-                animation: glow 5s linear infinite;
-            }
-        
-            @keyframes glow {
-                0% {
-                filter: hue-rotate(0deg);
-                }
-                100% {
-                filter: hue-rotate(360deg);
-                }
-            }
-        
-            /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
-        
-            .section2 {
-                width: 100vw;
-                height: 71vh;
-                background-color: #112031;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-                flex-direction: row;
-            }
-        
-            .section2_A {
-                width: 100vw;
-                height: 35vh;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-            }
-        
-            .section2_B {
-                width: 100vw;
-                height: 35vh;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-            }
-        
-            .titleA {
-                position: absolute;
-                top: 13em;
-                color: #fff;
-                display: block;
-                font-size: 1em;
-                margin: 1em 0 1em 0;
-                font-weight: bold;
-            }
-        
-            .titleB {
-                position: absolute;
-                top: 33em;
-                color: #fff;
-                display: block;
-                font-size: 1em;
-                margin: 1em 0 1em 0;
-                font-weight: bold;
-            }
-        
-            .wrapper {
-                border: 1px solid #ffffff;
-                height: 9em;
-                width: 9em;
-                position: absolute;
-            }
-        
-            .container {
-                height: 100%;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                perspective: 600px;
-                perspective-origin: 50%;
-            }
-        
-            .image-cube {
-                height: 10em;
-                width: 10em;
-                transform-style: preserve-3d;
-                position: relative;
-                transition: 2s;
-            }
-        
-            .image-cube div {
-                height: 10em;
-                width: 10em;
-                position: absolute;
-            }
-        
-            .image-cubeA {
-                height: 10em;
-                width: 10em;
-                transform-style: preserve-3d;
-                position: relative;
-                transition: 2s;
-            }
-        
-            .image-cubeA div {
-                height: 10em;
-                width: 10em;
-                position: absolute;
-            }
-        
-            img {
-                width: 100%;
-                height:100%;
-                transform: translateZ(0);
-            }
-        
-            .front {
-                transform: translateZ(5em);
-            }
-        
-            .right {
-                transform: rotateY(-270deg) translateX(5em);
-                transform-origin: 100% 0;
-            }
-        
-            .back {
-                transform: translateZ(-5em) rotateY(180deg);
-            }
-        
-            .left {
-                transform: rotateY(270deg) translateX(-5em);
-                transform-origin: 0 50%;
-            }
-        
-            .btns {
-                margin-top: 1.5em;
-                display: flex;
-                justify-content: space-between;
-                margin: 2.5em 0 0 0;
-            }
-        
-            .btns button {
-                background-color: transparent;
-                color: #fff;
-                border: 3px solid #fff;
-                padding: 0.3em 1.5em;
-                border-radius: 30px;
-                font-size: 18px;
-                cursor: pointer;
-            }
-        
-        
-            /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
-        
-            .section3 {
-                width: 100vw;
-                height: 8vh;
-                background-color: #020;
-            }
-        
-            /* ** ***** ####################     Text Box Superior    #################### ***** ** */
-        
-            .text-box{
-                background:#112031;
-                text-align: center;
-                overflow-x: hidden;
-                height: 8vh;
-                padding: 0.5em 0 1em 0;
-            }
-        
-            .text-box h2 {
-                font-size: 1.1em;
-                font-weight: 600;
-                font-family: 'Courier New', Courier, monospace;
-                color: #fff;
-                position: relative;
-            }
-        
-            .text-box h2::before, h2::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-            }
-        
-            .text-box h2::before {
-                background: #112031;
-                animation:  type 3s steps(25) 1s forwards infinite;
-                width: 100%;
-                
-            }
-        
-            .text-box span {
-                color: rgb(9, 214, 241);
-                font-weight: 900;
-                font-size: 1em;
-            }
-        
-            .text-box h2::after {
-                opacity: 1;
-                width: 0.2em; 
-                background: #fff;
-                color:#fff;
-                animation:  type 3s steps(25) 1s forwards infinite,
-                            blink 0.6s steps(15) infinite;
-            }
-        
-            @keyframes type {
-                to {
-                left: 110%;
-                }
-            }
-        
-            @keyframes blink {
-                0% , 50%{
-                opacity: 0;
-                } 
-                51%, 100% {
-                opacity: 1;
-                }
-            }
-
-}
-
-
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-/* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############              Escritorio 800            ############## ***** ** */
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-
-@media all and (max-width: 800px) {
-
-    body {
-        background-color: rgb(80, 300, 18);
-    }
-
-            /* ############## *  **     Barra de Navegación    **  * ################ */
-
-            .section1 {
-                width: 100vw;
-                height: 21vh;
-                background-color: #000;
-            }
-        
-            /* Efecto Disco */
-        
-            .container_A {
-                position: relative;
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-                flex-direction: row;
-                background: #112031;
-                font-size: 0.95em;
-                color: #fff;
-                padding: 1em 0 0.5em 0;
-            }
-        
-            .container_A i {
-                font-size: 1.5em;
-                padding: 0.5em;
-            }
-        
-            #charly {
-                font-size: 1.5em;
-                color: rgb(9, 214, 241); 
-            }
-        
-            .container_A span {
-                width: 100%;
-                height: 100%;
-                background: #efefef;
-                position: absolute;
-                z-index: -1;
-                transition: all 0.5s ease;
-            }
-        
-            .container_A div {
-                position: relative;
-                width: auto;
-                background: #112031;
-                color: #555;
-                padding: 0.25em 1em;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 2.2em;
-                font-family: American Typewriter;
-                cursor: pointer;
-                margin: 0.1em;
-                border-radius: 1em;
-                box-shadow: 0em 0em 0.3em rgba(0, 0, 0, 1);
-                transition: all 0.5s ease;
-            }
-        
-            input[type='checkbox'] {
-                position: absolute;
-                opacity: 0;
-                cursor: pointer;
-                height: 100%;
-                width: 100%;
-                z-index: 100;
-            }
-        
-            input[type='checkbox']:checked ~ span {
-                background: #333;
-            }
-        
-            input[type='checkbox']:checked ~ div {
-                box-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.5);
-                color: yellow;
-                text-shadow: 0em 0em 1em yellow, 0em 0em 1em yellow;
-                animation: glow 5s linear infinite;
-            }
-        
-            @keyframes glow {
-                0% {
-                filter: hue-rotate(0deg);
-                }
-                100% {
-                filter: hue-rotate(360deg);
-                }
-            }
-        
-            /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
-        
-            .section2 {
-                width: 100vw;
-                height: 71vh;
-                background-color: #112031;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-                flex-direction: row;
-            }
-        
-            .section2_A {
-                width: 100vw;
-                height: 35vh;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-            }
-        
-            .section2_B {
-                width: 100vw;
-                height: 35vh;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-            }
-        
-            .titleA {
-                position: absolute;
-                top: 13em;
-                color: #fff;
-                display: block;
-                font-size: 1em;
-                margin: 1em 0 1em 0;
-                font-weight: bold;
-            }
-        
-            .titleB {
-                position: absolute;
-                top: 33em;
-                color: #fff;
-                display: block;
-                font-size: 1em;
-                margin: 1em 0 1em 0;
-                font-weight: bold;
-            }
-        
-            .wrapper {
-                border: 1px solid #ffffff;
-                height: 9em;
-                width: 9em;
-                position: absolute;
-            }
-        
-            .container {
-                height: 100%;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                perspective: 600px;
-                perspective-origin: 50%;
-            }
-        
-            .image-cube {
-                height: 10em;
-                width: 10em;
-                transform-style: preserve-3d;
-                position: relative;
-                transition: 2s;
-            }
-        
-            .image-cube div {
-                height: 10em;
-                width: 10em;
-                position: absolute;
-            }
-        
-            .image-cubeA {
-                height: 10em;
-                width: 10em;
-                transform-style: preserve-3d;
-                position: relative;
-                transition: 2s;
-            }
-        
-            .image-cubeA div {
-                height: 10em;
-                width: 10em;
-                position: absolute;
-            }
-        
-            img {
-                width: 100%;
-                height:100%;
-                transform: translateZ(0);
-            }
-        
-            .front {
-                transform: translateZ(5em);
-            }
-        
-            .right {
-                transform: rotateY(-270deg) translateX(5em);
-                transform-origin: 100% 0;
-            }
-        
-            .back {
-                transform: translateZ(-5em) rotateY(180deg);
-            }
-        
-            .left {
-                transform: rotateY(270deg) translateX(-5em);
-                transform-origin: 0 50%;
-            }
-        
-            .btns {
-                margin-top: 1.5em;
-                display: flex;
-                justify-content: space-between;
-                margin: 2.5em 0 0 0;
-            }
-        
-            .btns button {
-                background-color: transparent;
-                color: #fff;
-                border: 3px solid #fff;
-                padding: 0.3em 1.5em;
-                border-radius: 30px;
-                font-size: 18px;
-                cursor: pointer;
-            }
-        
-        
-            /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
-        
-            .section3 {
-                width: 100vw;
-                height: 8vh;
-                background-color: #020;
-            }
-        
-            /* ** ***** ####################     Text Box Superior    #################### ***** ** */
-        
-            .text-box{
-                background:#112031;
-                text-align: center;
-                overflow-x: hidden;
-                height: 8vh;
-                padding: 0.5em 0 1em 0;
-            }
-        
-            .text-box h2 {
-                font-size: 1.1em;
-                font-weight: 600;
-                font-family: 'Courier New', Courier, monospace;
-                color: #fff;
-                position: relative;
-            }
-        
-            .text-box h2::before, h2::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-            }
-        
-            .text-box h2::before {
-                background: #112031;
-                animation:  type 3s steps(25) 1s forwards infinite;
-                width: 100%;
-                
-            }
-        
-            .text-box span {
-                color: rgb(9, 214, 241);
-                font-weight: 900;
-                font-size: 1.1em;
-            }
-        
-            .text-box h2::after {
-                opacity: 1;
-                width: 0.2em; 
-                background: #fff;
-                color:#fff;
-                animation:  type 3s steps(25) 1s forwards infinite,
-                            blink 0.6s steps(15) infinite;
-            }
-        
-            @keyframes type {
-                to {
-                left: 110%;
-                }
-            }
-        
-            @keyframes blink {
-                0% , 50%{
-                opacity: 0;
-                } 
-                51%, 100% {
-                opacity: 1;
-                }
-            }
-        
-}
-
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-/* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############              Escritorio 700            ############## ***** ** */
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-
-@media all and (max-width: 700px) {
-
-    body {
-        background-color: rgb(70, 290, 17);
-    }
-
-        /* ############## *  **     Barra de Navegación    **  * ################ */
-
-        .section1 {
-            width: 100vw;
-            height: 21vh;
-            background-color: #000;
-        }
-    
-        /* Efecto Disco */
-    
-        .container_A {
-            position: relative;
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            flex-direction: row;
-            background: #112031;
-            font-size: 0.95em;
-            color: #fff;
-            padding: 1em 0 0.5em 0;
-        }
-    
-        .container_A i {
-            font-size: 1.5em;
-            padding: 0.5em;
-        }
-    
-        #charly {
-            font-size: 1.5em;
-            color: rgb(9, 214, 241); 
-        }
-    
-        .container_A span {
-            width: 100%;
-            height: 100%;
-            background: #efefef;
-            position: absolute;
-            z-index: -1;
-            transition: all 0.5s ease;
-        }
-    
-        .container_A div {
-            position: relative;
-            width: auto;
-            background: #112031;
-            color: #555;
-            padding: 0.25em 1em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2.2em;
-            font-family: American Typewriter;
-            cursor: pointer;
-            margin: 0.1em;
-            border-radius: 1em;
-            box-shadow: 0em 0em 0.3em rgba(0, 0, 0, 1);
-            transition: all 0.5s ease;
-        }
-    
-        input[type='checkbox'] {
-            position: absolute;
-            opacity: 0;
-            cursor: pointer;
-            height: 100%;
-            width: 100%;
-            z-index: 100;
-        }
-    
-        input[type='checkbox']:checked ~ span {
-            background: #333;
-        }
-    
-        input[type='checkbox']:checked ~ div {
-            box-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.5);
-            color: yellow;
-            text-shadow: 0em 0em 1em yellow, 0em 0em 1em yellow;
-            animation: glow 5s linear infinite;
-        }
-    
-        @keyframes glow {
-            0% {
-            filter: hue-rotate(0deg);
-            }
-            100% {
-            filter: hue-rotate(360deg);
-            }
-        }
-    
-        /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
-    
-        .section2 {
-            width: 100vw;
-            height: 71vh;
-            background-color: #112031;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            flex-direction: row;
-        }
-    
-        .section2_A {
-            width: 100vw;
-            height: 35vh;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-        }
-    
-        .section2_B {
-            width: 100vw;
-            height: 35vh;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-        }
-    
-        .titleA {
-            position: absolute;
-            top: 13em;
-            color: #fff;
-            display: block;
-            font-size: 1em;
-            margin: 1em 0 1em 0;
-            font-weight: bold;
-        }
-    
-        .titleB {
-            position: absolute;
-            top: 33em;
-            color: #fff;
-            display: block;
-            font-size: 1em;
-            margin: 1em 0 1em 0;
-            font-weight: bold;
-        }
-    
-        .wrapper {
-            border: 1px solid #ffffff;
-            height: 9em;
-            width: 9em;
-            position: absolute;
-        }
-    
-        .container {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            perspective: 600px;
-            perspective-origin: 50%;
-        }
-    
-        .image-cube {
-            height: 10em;
-            width: 10em;
-            transform-style: preserve-3d;
-            position: relative;
-            transition: 2s;
-        }
-    
-        .image-cube div {
-            height: 10em;
-            width: 10em;
-            position: absolute;
-        }
-    
-        .image-cubeA {
-            height: 10em;
-            width: 10em;
-            transform-style: preserve-3d;
-            position: relative;
-            transition: 2s;
-        }
-    
-        .image-cubeA div {
-            height: 10em;
-            width: 10em;
-            position: absolute;
-        }
-    
-        img {
-            width: 100%;
-            height:100%;
-            transform: translateZ(0);
-        }
-    
-        .front {
-            transform: translateZ(5em);
-        }
-    
-        .right {
-            transform: rotateY(-270deg) translateX(5em);
-            transform-origin: 100% 0;
-        }
-    
-        .back {
-            transform: translateZ(-5em) rotateY(180deg);
-        }
-    
-        .left {
-            transform: rotateY(270deg) translateX(-5em);
-            transform-origin: 0 50%;
-        }
-    
-        .btns {
-            margin-top: 1.5em;
-            display: flex;
-            justify-content: space-between;
-            margin: 2.5em 0 0 0;
-        }
-    
-        .btns button {
-            background-color: transparent;
-            color: #fff;
-            border: 3px solid #fff;
-            padding: 0.3em 1.5em;
-            border-radius: 30px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-    
-    
-        /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
-    
-        .section3 {
-            width: 100vw;
-            height: 8vh;
-            background-color: #020;
-        }
-    
-        /* ** ***** ####################     Text Box Superior    #################### ***** ** */
-    
-        .text-box{
-            background:#112031;
-            text-align: center;
-            overflow-x: hidden;
-            height: 8vh;
-            padding: 0.5em 0 1em 0;
-        }
-    
-        .text-box h2 {
-            font-size: 1.1em;
-            font-weight: 600;
-            font-family: 'Courier New', Courier, monospace;
-            color: #fff;
-            position: relative;
-        }
-    
-        .text-box h2::before, h2::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-        }
-    
-        .text-box h2::before {
-            background: #112031;
-            animation:  type 3s steps(25) 1s forwards infinite;
-            width: 100%;
-            
-        }
-    
-        .text-box span {
-            color: rgb(9, 214, 241);
-            font-weight: 900;
-            font-size: 1.1em;
-        }
-    
-        .text-box h2::after {
-            opacity: 1;
-            width: 0.2em; 
-            background: #fff;
-            color:#fff;
-            animation:  type 3s steps(25) 1s forwards infinite,
-                        blink 0.6s steps(15) infinite;
-        }
-    
-        @keyframes type {
-            to {
-            left: 110%;
-            }
-        }
-    
-        @keyframes blink {
-            0% , 50%{
-            opacity: 0;
-            } 
-            51%, 100% {
-            opacity: 1;
-            }
-        }
-
-}
-
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-/* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############              Escritorio 600            ############## ***** ** */
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-
-@media all and (max-width: 600px) {
-
-    body {
-        background-color: rgb(60, 280, 16);
-    }
-
-    /* ############## *  **     Barra de Navegación    **  * ################ */
-
-    .section1 {
-        width: 100vw;
-        height: 22vh;
-        background-color: #000;
-    }
-
-    /* Efecto Disco */
-
-    .container_A {
-        position: relative;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        flex-direction: row;
-        background: #112031;
-        font-size: 0.9em;
-        color: #fff;
-        padding: 1em 0 0.5em 0;
+        padding: 1em 0 0.6em 0;
     }
 
     .container_A i {
-        font-size: 1.5em;
-        padding: 0.5em;
+        font-size: 1em;
+        padding: 0.25em;
     }
 
     #charly {
-        font-size: 1.5em;
+        font-size: 1em;
         color: rgb(9, 214, 241); 
     }
 
@@ -3129,11 +1882,11 @@ img {
         width: auto;
         background: #112031;
         color: #555;
-        padding: 0.25em 1em;
+        padding: 0.25em 0.5em;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2.2em;
+        font-size: 1.2em;
         font-family: American Typewriter;
         cursor: pointer;
         margin: 0.1em;
@@ -3175,7 +1928,7 @@ img {
 
     .section2 {
         width: 100vw;
-        height: 70vh;
+        height: 30vh;
         background-color: #112031;
         display: flex;
         flex-wrap: wrap;
@@ -3186,8 +1939,8 @@ img {
     }
 
     .section2_A {
-        width: 100vw;
-        height: 35vh;
+        width: 50vw;
+        height: 22vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -3195,8 +1948,8 @@ img {
     }
 
     .section2_B {
-        width: 100vw;
-        height: 35vh;
+        width: 50vw;
+        height: 22vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -3205,964 +1958,21 @@ img {
 
     .titleA {
         position: absolute;
-        top: 13em;
+        top: 16em;
         color: #fff;
         display: block;
-        font-size: 1em;
-        margin: 1em 0 1em 0;
-        font-weight: bold;
-    }
-
-    .titleB {
-        position: absolute;
-        top: 33em;
-        color: #fff;
-        display: block;
-        font-size: 1em;
-        margin: 1em 0 1em 0;
-        font-weight: bold;
-    }
-
-    .wrapper {
-        border: 1px solid #ffffff;
-        height: 9em;
-        width: 9em;
-        position: absolute;
-    }
-
-    .container {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        perspective: 600px;
-        perspective-origin: 50%;
-    }
-
-    .image-cube {
-        height: 10em;
-        width: 10em;
-        transform-style: preserve-3d;
-        position: relative;
-        transition: 2s;
-    }
-
-    .image-cube div {
-        height: 10em;
-        width: 10em;
-        position: absolute;
-    }
-
-    .image-cubeA {
-        height: 10em;
-        width: 10em;
-        transform-style: preserve-3d;
-        position: relative;
-        transition: 2s;
-    }
-
-    .image-cubeA div {
-        height: 10em;
-        width: 10em;
-        position: absolute;
-    }
-
-    img {
-        width: 100%;
-        height:100%;
-        transform: translateZ(0);
-    }
-
-    .front {
-        transform: translateZ(5em);
-    }
-
-    .right {
-        transform: rotateY(-270deg) translateX(5em);
-        transform-origin: 100% 0;
-    }
-
-    .back {
-        transform: translateZ(-5em) rotateY(180deg);
-    }
-
-    .left {
-        transform: rotateY(270deg) translateX(-5em);
-        transform-origin: 0 50%;
-    }
-
-    .btns {
-        margin-top: 1.5em;
-        display: flex;
-        justify-content: space-between;
-        margin: 2.5em 0 0 0;
-    }
-
-    .btns button {
-        background-color: transparent;
-        color: #fff;
-        border: 3px solid #fff;
-        padding: 0.3em 1.5em;
-        border-radius: 30px;
-        font-size: 18px;
-        cursor: pointer;
-    }
-
-
-    /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
-
-    .section3 {
-        width: 100vw;
-        height: 8vh;
-        background-color: #020;
-    }
-
-    /* ** ***** ####################     Text Box Superior    #################### ***** ** */
-
-    .text-box{
-        background:#112031;
-        text-align: center;
-        overflow-x: hidden;
-        height: 8vh;
-        padding: 0.5em 0 1em 0;
-    }
-
-    .text-box h2 {
-        font-size: 1.1em;
-        font-weight: 600;
-        font-family: 'Courier New', Courier, monospace;
-        color: #fff;
-        position: relative;
-    }
-
-    .text-box h2::before, h2::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-    }
-
-    .text-box h2::before {
-        background: #112031;
-        animation:  type 3s steps(25) 1s forwards infinite;
-        width: 100%;
-        
-    }
-
-    .text-box span {
-        color: rgb(9, 214, 241);
-        font-weight: 900;
-        font-size: 1.1em;
-    }
-
-    .text-box h2::after {
-        opacity: 1;
-        width: 0.2em; 
-        background: #fff;
-        color:#fff;
-        animation:  type 3s steps(25) 1s forwards infinite,
-                    blink 0.6s steps(15) infinite;
-    }
-
-    @keyframes type {
-        to {
-        left: 110%;
-        }
-    }
-
-    @keyframes blink {
-        0% , 50%{
-        opacity: 0;
-        } 
-        51%, 100% {
-        opacity: 1;
-        }
-    }
-            
-}
-
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-/* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############              Escritorio 500            ############## ***** ** */
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-
-@media all and (max-width: 500px) {
-
-    body {
-        background-color: rgb(50, 270, 14);
-    }
-
-        /* ############## *  **     Barra de Navegación    **  * ################ */
-
-        .section1 {
-            width: 100vw;
-            height: 22vh;
-            background-color: #000;
-        }
-    
-        /* Efecto Disco */
-    
-        .container_A {
-            position: relative;
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            flex-direction: row;
-            background: #112031;
-            font-size: 0.85em;
-            color: #fff;
-            padding: 1em 0 0.5em 0;
-        }
-    
-        .container_A i {
-            font-size: 1.5em;
-            padding: 0.5em;
-        }
-    
-        #charly {
-            font-size: 1.5em;
-            color: rgb(9, 214, 241); 
-        }
-    
-        .container_A span {
-            width: 100%;
-            height: 100%;
-            background: #efefef;
-            position: absolute;
-            z-index: -1;
-            transition: all 0.5s ease;
-        }
-    
-        .container_A div {
-            position: relative;
-            width: auto;
-            background: #112031;
-            color: #555;
-            padding: 0.25em 1em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2.2em;
-            font-family: American Typewriter;
-            cursor: pointer;
-            margin: 0.1em;
-            border-radius: 1em;
-            box-shadow: 0em 0em 0.3em rgba(0, 0, 0, 1);
-            transition: all 0.5s ease;
-        }
-    
-        input[type='checkbox'] {
-            position: absolute;
-            opacity: 0;
-            cursor: pointer;
-            height: 100%;
-            width: 100%;
-            z-index: 100;
-        }
-    
-        input[type='checkbox']:checked ~ span {
-            background: #333;
-        }
-    
-        input[type='checkbox']:checked ~ div {
-            box-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.5);
-            color: yellow;
-            text-shadow: 0em 0em 1em yellow, 0em 0em 1em yellow;
-            animation: glow 5s linear infinite;
-        }
-    
-        @keyframes glow {
-            0% {
-            filter: hue-rotate(0deg);
-            }
-            100% {
-            filter: hue-rotate(360deg);
-            }
-        }
-    
-        /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
-    
-        .section2 {
-            width: 100vw;
-            height: 70vh;
-            background-color: #112031;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            flex-direction: row;
-        }
-    
-        .section2_A {
-            width: 100vw;
-            height: 35vh;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-        }
-    
-        .section2_B {
-            width: 100vw;
-            height: 35vh;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-        }
-    
-        .titleA {
-            position: absolute;
-            top: 13em;
-            color: #fff;
-            display: block;
-            font-size: 1em;
-            margin: 1em 0 1em 0;
-            font-weight: bold;
-        }
-    
-        .titleB {
-            position: absolute;
-            top: 33em;
-            color: #fff;
-            display: block;
-            font-size: 1em;
-            margin: 1em 0 1em 0;
-            font-weight: bold;
-        }
-    
-        .wrapper {
-            border: 1px solid #ffffff;
-            height: 9em;
-            width: 9em;
-            position: absolute;
-        }
-    
-        .container {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            perspective: 600px;
-            perspective-origin: 50%;
-        }
-    
-        .image-cube {
-            height: 10em;
-            width: 10em;
-            transform-style: preserve-3d;
-            position: relative;
-            transition: 2s;
-        }
-    
-        .image-cube div {
-            height: 10em;
-            width: 10em;
-            position: absolute;
-        }
-    
-        .image-cubeA {
-            height: 10em;
-            width: 10em;
-            transform-style: preserve-3d;
-            position: relative;
-            transition: 2s;
-        }
-    
-        .image-cubeA div {
-            height: 10em;
-            width: 10em;
-            position: absolute;
-        }
-    
-        img {
-            width: 100%;
-            height:100%;
-            transform: translateZ(0);
-        }
-    
-        .front {
-            transform: translateZ(5em);
-        }
-    
-        .right {
-            transform: rotateY(-270deg) translateX(5em);
-            transform-origin: 100% 0;
-        }
-    
-        .back {
-            transform: translateZ(-5em) rotateY(180deg);
-        }
-    
-        .left {
-            transform: rotateY(270deg) translateX(-5em);
-            transform-origin: 0 50%;
-        }
-    
-        .btns {
-            margin-top: 1.5em;
-            display: flex;
-            justify-content: space-between;
-            margin: 2.5em 0 0 0;
-        }
-    
-        .btns button {
-            background-color: transparent;
-            color: #fff;
-            border: 3px solid #fff;
-            padding: 0.3em 1.5em;
-            border-radius: 30px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-    
-    
-        /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
-    
-        .section3 {
-            width: 100vw;
-            height: 8vh;
-            background-color: #020;
-        }
-    
-        /* ** ***** ####################     Text Box Superior    #################### ***** ** */
-    
-        .text-box{
-            background:#112031;
-            text-align: center;
-            overflow-x: hidden;
-            height: 8vh;
-            padding: 0.5em 0 1em 0;
-        }
-    
-        .text-box h2 {
-            font-size: 1.1em;
-            font-weight: 600;
-            font-family: 'Courier New', Courier, monospace;
-            color: #fff;
-            position: relative;
-        }
-    
-        .text-box h2::before, h2::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-        }
-    
-        .text-box h2::before {
-            background: #112031;
-            animation:  type 3s steps(25) 1s forwards infinite;
-            width: 100%;
-            
-        }
-    
-        .text-box span {
-            color: rgb(9, 214, 241);
-            font-weight: 900;
-            font-size: 1.1em;
-        }
-    
-        .text-box h2::after {
-            opacity: 1;
-            width: 0.2em; 
-            background: #fff;
-            color:#fff;
-            animation:  type 3s steps(25) 1s forwards infinite,
-                        blink 0.6s steps(15) infinite;
-        }
-    
-        @keyframes type {
-            to {
-            left: 110%;
-            }
-        }
-    
-        @keyframes blink {
-            0% , 50%{
-            opacity: 0;
-            } 
-            51%, 100% {
-            opacity: 1;
-            }
-        }
-            
-
-}
-
-
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-/* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############              Escritorio 400            ############## ***** ** */
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-
-@media all and (max-width: 400px) {
-
-    body {
-        background-color: rgb(40, 260, 13);
-    }
-
-    /* ############## *  **     Barra de Navegación    **  * ################ */
-
-    .section1 {
-        width: 100vw;
-        height: 22vh;
-        background-color: #000;
-    }
-
-    /* Efecto Disco */
-
-    .container_A {
-        position: relative;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        flex-direction: row;
-        background: #112031;
         font-size: 0.8em;
-        color: #fff;
-        padding: 1em 0 0.5em 0;
-    }
-
-    .container_A i {
-        font-size: 1.5em;
-        padding: 0.5em;
-    }
-
-    #charly {
-        font-size: 1.5em;
-        color: rgb(9, 214, 241); 
-    }
-
-    .container_A span {
-        width: 100%;
-        height: 100%;
-        background: #efefef;
-        position: absolute;
-        z-index: -1;
-        transition: all 0.5s ease;
-    }
-
-    .container_A div {
-        position: relative;
-        width: auto;
-        background: #112031;
-        color: #555;
-        padding: 0.25em 1em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2.2em;
-        font-family: American Typewriter;
-        cursor: pointer;
-        margin: 0.1em;
-        border-radius: 1em;
-        box-shadow: 0em 0em 0.3em rgba(0, 0, 0, 1);
-        transition: all 0.5s ease;
-    }
-
-    input[type='checkbox'] {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 100%;
-        width: 100%;
-        z-index: 100;
-    }
-
-    input[type='checkbox']:checked ~ span {
-        background: #333;
-    }
-
-    input[type='checkbox']:checked ~ div {
-        box-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.5);
-        color: yellow;
-        text-shadow: 0em 0em 1em yellow, 0em 0em 1em yellow;
-        animation: glow 5s linear infinite;
-    }
-
-    @keyframes glow {
-        0% {
-        filter: hue-rotate(0deg);
-        }
-        100% {
-        filter: hue-rotate(360deg);
-        }
-    }
-
-    /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
-
-    .section2 {
-        width: 100vw;
-        height: 70vh;
-        background-color: #112031;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    .section2_A {
-        width: 100vw;
-        height: 35vh;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .section2_B {
-        width: 100vw;
-        height: 35vh;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .titleA {
-        position: absolute;
-        top: 15em;
-        color: #fff;
-        display: block;
-        font-size: 1em;
-        margin: 1em 0 0.5em 0;
+        margin: 0.5em 0 0.25em 0;
         font-weight: bold;
     }
 
     .titleB {
         position: absolute;
-        top: 35em;
+        top: 16em;
         color: #fff;
         display: block;
-        font-size: 1em;
-        margin: 1em 0 0.5em 0;
-        font-weight: bold;
-    }
-
-    .wrapper {
-        border: 1px solid #ffffff;
-        height: 8em;
-        width: 8em;
-        position: absolute;
-    }
-
-    .container {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        perspective: 600px;
-        perspective-origin: 50%;
-    }
-
-    .image-cube {
-        height: 8em;
-        width: 8em;
-        transform-style: preserve-3d;
-        position: relative;
-        transition: 2s;
-    }
-
-    .image-cube div {
-        height: 8em;
-        width: 8em;
-        position: absolute;
-    }
-
-    .image-cubeA {
-        height: 8em;
-        width: 8em;
-        transform-style: preserve-3d;
-        position: relative;
-        transition: 2s;
-    }
-
-    .image-cubeA div {
-        height: 8em;
-        width: 8em;
-        position: absolute;
-    }
-
-    img {
-        width: 100%;
-        height:100%;
-        transform: translateZ(0);
-    }
-
-    .front {
-        transform: translateZ(4em);
-    }
-
-    .right {
-        transform: rotateY(-270deg) translateX(4em);
-        transform-origin: 100% 0;
-    }
-
-    .back {
-        transform: translateZ(-4em) rotateY(180deg);
-    }
-
-    .left {
-        transform: rotateY(270deg) translateX(-4em);
-        transform-origin: 0 50%;
-    }
-
-    .btns {
-        margin-top: 2em;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .btns button {
-        background-color: transparent;
-        color: #fff;
-        border: 3px solid #fff;
-        padding: 0.25em 1.5em;
-        border-radius: 30px;
-        font-size: 12px;
-        cursor: pointer;
-    }
-
-
-    /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
-
-    .section3 {
-        width: 100vw;
-        height: 8vh;
-        background-color: #020;
-    }
-
-    /* ** ***** ####################     Text Box Superior    #################### ***** ** */
-
-    .text-box{
-        background:#112031;
-        text-align: center;
-        overflow-x: hidden;
-        height: 8vh;
-        padding: 0.5em 0 1em 0;
-    }
-
-    .text-box h2 {
-        font-size: 0.9em;
-        font-weight: 600;
-        font-family: 'Courier New', Courier, monospace;
-        color: #fff;
-        position: relative;
-    }
-
-    .text-box h2::before, h2::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-    }
-
-    .text-box h2::before {
-        background: #112031;
-        animation:  type 3s steps(25) 1s forwards infinite;
-        width: 100%;
-        
-    }
-
-    .text-box span {
-        color: rgb(9, 214, 241);
-        font-weight: 900;
-        font-size: 0.9em;
-    }
-
-    .text-box h2::after {
-        opacity: 1;
-        width: 0.2em; 
-        background: #fff;
-        color:#fff;
-        animation:  type 3s steps(25) 1s forwards infinite,
-                    blink 0.6s steps(15) infinite;
-    }
-
-    @keyframes type {
-        to {
-        left: 110%;
-        }
-    }
-
-    @keyframes blink {
-        0% , 50%{
-        opacity: 0;
-        } 
-        51%, 100% {
-        opacity: 1;
-        }
-    }
-    
-}
-
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-/* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############              Escritorio 300            ############## ***** ** */
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-
-@media all and (max-width: 300px) {
-
-    body {
-        background-color: rgb(30, 250, 12);
-    }
-
-/* ############## *  **     Barra de Navegación    **  * ################ */
-        
-    .section1 {
-        width: 100vw;
-        height: 22vh;
-        background-color: #000;
-    }
-
-    /* Efecto Disco */
-
-    .container_A {
-        position: relative;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        flex-direction: row;
-        background: #112031;
-        font-size: 0.7em;
-        color: #fff;
-        padding: 1em 0 0.5em 0;
-    }
-
-    .container_A i {
-        font-size: 1.45em;
-        padding: 0.5em;
-    }
-
-    #charly {
-        font-size: 1.5em;
-        color: rgb(9, 214, 241); 
-    }
-
-    .container_A span {
-        width: 100%;
-        height: 100%;
-        background: #efefef;
-        position: absolute;
-        z-index: -1;
-        transition: all 0.5s ease;
-    }
-
-    .container_A div {
-        position: relative;
-        width: auto;
-        background: #112031;
-        color: #555;
-        padding: 0.25em 1em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2.2em;
-        font-family: American Typewriter;
-        cursor: pointer;
-        margin: 0.1em;
-        border-radius: 1em;
-        box-shadow: 0em 0em 0.3em rgba(0, 0, 0, 1);
-        transition: all 0.5s ease;
-    }
-
-    input[type='checkbox'] {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 100%;
-        width: 100%;
-        z-index: 100;
-    }
-
-    input[type='checkbox']:checked ~ span {
-        background: #333;
-    }
-
-    input[type='checkbox']:checked ~ div {
-        box-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.5);
-        color: yellow;
-        text-shadow: 0em 0em 1em yellow, 0em 0em 1em yellow;
-        animation: glow 5s linear infinite;
-    }
-
-    @keyframes glow {
-        0% {
-        filter: hue-rotate(0deg);
-        }
-        100% {
-        filter: hue-rotate(360deg);
-        }
-    }
-
-    /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
-
-    .section2 {
-        width: 100vw;
-        height: 70vh;
-        background-color: #112031;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    .section2_A {
-        width: 100vw;
-        height: 35vh;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .section2_B {
-        width: 100vw;
-        height: 35vh;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .titleA {
-        position: absolute;
-        top: 15em;
-        color: #fff;
-        display: block;
-        font-size: 1em;
-        margin: 1em 0 0.5em 0;
-        font-weight: bold;
-    }
-
-    .titleB {
-        position: absolute;
-        top: 35em;
-        color: #fff;
-        display: block;
-        font-size: 1em;
-        margin: 1em 0 0.5em 0;
+        font-size: 0.8em;
+        margin: 0.5em 0 0.25em 0;
         font-weight: bold;
     }
 
@@ -4236,7 +2046,7 @@ img {
     }
 
     .btns {
-        margin-top: 3em;
+        margin-top: 1.5em;
         display: flex;
         justify-content: space-between;
     }
@@ -4266,12 +2076,12 @@ img {
         background:#112031;
         text-align: center;
         overflow-x: hidden;
-        height: 8vh;
-        padding: 0.5em 0 1em 0;
+        height: 10vh;
+        padding: 1em 2em ;
     }
 
     .text-box h2 {
-        font-size: 0.9em;
+        font-size: 1.3em;
         font-weight: 600;
         font-family: 'Courier New', Courier, monospace;
         color: #fff;
@@ -4296,7 +2106,7 @@ img {
     .text-box span {
         color: rgb(9, 214, 241);
         font-weight: 900;
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
 
     .text-box h2::after {
@@ -4325,23 +2135,23 @@ img {
 
 }
 
+
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 /* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############              Escritorio 250            ############## ***** ** */
+/* ** ***** ##############              Escritorio 800            ############## ***** ** */
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 
-@media all and (max-width: 250px) {
+@media all and (max-width: 800px) {
 
     body {
-      background-color: rgb(20, 240, 11);
+        background-color: rgb(70, 290, 17);
     }
-      
-    /* ############## *  **     Barra de Navegación    **  * ################ */
+
     /* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
 
     .section1 {
         width: 100vw;
-        height: 7vh;
+        height: 20vh;
         background-color: #000;
     }
 
@@ -4357,13 +2167,13 @@ img {
         justify-content: center;
         flex-direction: row;
         background: #112031;
-        font-size: 0.5em;
+        font-size: 1.4em;
         color: #fff;
-        padding: 1em 0 0.5em 0;
+        padding: 1em 0 0.6em 0;
     }
 
     .container_A i {
-        font-size: 1.1em;
+        font-size: 1.2em;
         padding: 0.25em;
     }
 
@@ -4432,7 +2242,7 @@ img {
 
     .section2 {
         width: 100vw;
-        height: 50vh;
+        height: 30vh;
         background-color: #112031;
         display: flex;
         flex-wrap: wrap;
@@ -4443,8 +2253,8 @@ img {
     }
 
     .section2_A {
-        width: 100vw;
-        height: 25vh;
+        width: 50vw;
+        height: 22vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -4452,8 +2262,8 @@ img {
     }
 
     .section2_B {
-        width: 100vw;
-        height: 25vh;
+        width: 50vw;
+        height: 22vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -4462,28 +2272,341 @@ img {
 
     .titleA {
         position: absolute;
-        top: 7em;
+        top: 16em;
         color: #fff;
         display: block;
-        font-size: 0.6em;
-        margin: 1em 0 0.5em 0;
+        font-size: 0.8em;
+        margin: 0.5em 0 0.25em 0;
         font-weight: bold;
     }
 
     .titleB {
         position: absolute;
-        top: 30em;
+        top: 16em;
         color: #fff;
         display: block;
-        font-size: 0.6em;
-        margin: 1em 0 0.5em 0;
+        font-size: 0.8em;
+        margin: 0.5em 0 0.25em 0;
         font-weight: bold;
     }
 
     .wrapper {
         border: 1px solid #ffffff;
+        height: 6em;
+        width: 6em;
+        position: absolute;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 600px;
+        perspective-origin: 50%;
+    }
+
+    .image-cube {
         height: 7em;
         width: 7em;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: 2s;
+    }
+
+    .image-cube div {
+        height: 7em;
+        width: 7em;
+        position: absolute;
+    }
+
+    .image-cubeA {
+        height: 7em;
+        width: 7em;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: 2s;
+    }
+
+    .image-cubeA div {
+        height: 7em;
+        width: 7em;
+        position: absolute;
+    }
+
+    img {
+        width: 100%;
+        height:100%;
+        transform: translateZ(0);
+    }
+
+    .front {
+        transform: translateZ(3.5em);
+    }
+
+    .right {
+        transform: rotateY(-270deg) translateX(3.5em);
+        transform-origin: 100% 0;
+    }
+
+    .back {
+        transform: translateZ(-3.5em) rotateY(180deg);
+    }
+
+    .left {
+        transform: rotateY(270deg) translateX(-3.5em);
+        transform-origin: 0 50%;
+    }
+
+    .btns {
+        margin-top: 1.5em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btns button {
+        background-color: transparent;
+        color: #fff;
+        border: 3px solid #fff;
+        padding: 0.25em 1.5em;
+        border-radius: 30px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+
+    /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
+
+    .section3 {
+        width: 100vw;
+        height: 8vh;
+        background-color: #020;
+    }
+
+    /* ** ***** ####################     Text Box Superior    #################### ***** ** */
+
+    .text-box{
+        background:#112031;
+        text-align: center;
+        overflow-x: hidden;
+        height: 10vh;
+        padding: 1em 2em ;
+    }
+
+    .text-box h2 {
+        font-size: 1.3em;
+        font-weight: 600;
+        font-family: 'Courier New', Courier, monospace;
+        color: #fff;
+        position: relative;
+    }
+
+    .text-box h2::before, h2::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    .text-box h2::before {
+        background: #112031;
+        animation:  type 3s steps(25) 1s forwards infinite;
+        width: 100%;
+        
+    }
+
+    .text-box span {
+        color: rgb(9, 214, 241);
+        font-weight: 900;
+        font-size: 1.1em;
+    }
+
+    .text-box h2::after {
+        opacity: 1;
+        width: 0.2em; 
+        background: #fff;
+        color:#fff;
+        animation:  type 3s steps(25) 1s forwards infinite,
+                    blink 0.6s steps(15) infinite;
+    }
+
+    @keyframes type {
+        to {
+        left: 110%;
+        }
+    }
+
+    @keyframes blink {
+        0% , 50%{
+        opacity: 0;
+        } 
+        51%, 100% {
+        opacity: 1;
+        }
+    }
+
+}
+
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+/* ** ***** ##############          Código      Responsive         ############## ***** ** */
+/* ** ***** ##############              Escritorio 600            ############## ***** ** */
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+
+@media all and (max-width: 600px) {
+
+    body {
+        background-color: rgb(60, 280, 16);
+    }
+
+    /* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
+
+    .section1 {
+        width: 100vw;
+        height: 15vh;
+        background-color: #000;
+    }
+
+    /* Efecto Disco */
+
+    .container_A {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+        background: #112031;
+        font-size: 1.2em;
+        color: #fff;
+        padding: 1em 0 0.6em 0;
+    }
+
+    .container_A i {
+        font-size: 1.2em;
+        padding: 0.25em;
+    }
+
+    #charly {
+        font-size: 1em;
+        color: rgb(9, 214, 241); 
+    }
+
+    .container_A span {
+        width: 100%;
+        height: 100%;
+        background: #efefef;
+        position: absolute;
+        z-index: -1;
+        transition: all 0.5s ease;
+    }
+
+    .container_A div {
+        position: relative;
+        width: auto;
+        background: #112031;
+        color: #555;
+        padding: 0.25em 0.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        font-family: American Typewriter;
+        cursor: pointer;
+        margin: 0.1em;
+        border-radius: 1em;
+        box-shadow: 0em 0em 0.3em rgba(0, 0, 0, 1);
+        transition: all 0.5s ease;
+    }
+
+    input[type='checkbox'] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+    }
+
+    input[type='checkbox']:checked ~ span {
+        background: #333;
+    }
+
+    input[type='checkbox']:checked ~ div {
+        box-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.5);
+        color: yellow;
+        text-shadow: 0em 0em 1em yellow, 0em 0em 1em yellow;
+        animation: glow 5s linear infinite;
+    }
+
+    @keyframes glow {
+        0% {
+        filter: hue-rotate(0deg);
+        }
+        100% {
+        filter: hue-rotate(360deg);
+        }
+    }
+
+    /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
+
+    .section2 {
+        width: 100vw;
+        height: 35vh;
+        background-color: #112031;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .section2_A {
+        width: 50vw;
+        height: 22vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section2_B {
+        width: 50vw;
+        height: 22vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titleA {
+        position: absolute;
+        top: 20em;
+        color: #fff;
+        display: block;
+        font-size: 0.6em;
+        margin: 0.5em 0 0.25em 0;
+        font-weight: bold;
+    }
+
+    .titleB {
+        position: absolute;
+        top: 20em;
+        color: #fff;
+        display: block;
+        font-size: 0.6em;
+        margin: 0.5em 0 0.25em 0;
+        font-weight: bold;
+    }
+
+    .wrapper {
+        border: 1px solid #ffffff;
+        height: 6em;
+        width: 6em;
         position: absolute;
     }
 
@@ -4571,6 +2694,635 @@ img {
     .section3 {
         width: 100vw;
         height: 8vh;
+        background-color: #020;
+    }
+
+    /* ** ***** ####################     Text Box Superior    #################### ***** ** */
+
+    .text-box{
+        background:#112031;
+        text-align: center;
+        overflow-x: hidden;
+        height: 9vh;
+        padding: 1em 2em ;
+    }
+    
+    .text-box h2 {
+        font-size: 1.2em;
+        font-weight: 600;
+        font-family: 'Courier New', Courier, monospace;
+        color: #fff;
+        position: relative;
+    }
+    
+    .text-box h2::before, h2::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+    
+    .text-box h2::before {
+        background: #112031;
+        animation:  type 3s steps(25) 1s forwards infinite;
+        width: 100%;
+        
+    }
+    
+    .text-box span {
+        color: rgb(9, 214, 241);
+        font-weight: 900;
+        font-size: 1em;
+    }
+    
+    .text-box h2::after {
+        opacity: 1;
+        width: 0.2em; 
+        background: #fff;
+        color:#fff;
+        animation:  type 3s steps(25) 1s forwards infinite,
+                    blink 0.6s steps(15) infinite;
+    }
+    
+    @keyframes type {
+        to {
+        left: 110%;
+        }
+    }
+    
+    @keyframes blink {
+        0% , 50%{
+        opacity: 0;
+        } 
+        51%, 100% {
+        opacity: 1;
+        }
+    }
+            
+}
+
+
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+/* ** ***** ##############          Código      Responsive         ############## ***** ** */
+/* ** ***** ##############              Escritorio 500            ############## ***** ** */
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+
+@media all and (max-width: 500px) {
+
+    body {
+        background-color: rgb(30, 250, 12);
+    }
+
+
+    /* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
+
+    .section1 {
+        width: 100vw;
+        height: 6vh;
+        background-color: #000;
+    }
+
+    /* Efecto Disco */
+
+    .container_A {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+        background: #112031;
+        font-size: 0.6em;
+        color: #fff;
+        padding: 1em 0 0.6em 0;
+    }
+
+    .container_A i {
+        font-size: 1.1em;
+        padding: 0.25em;
+    }
+
+    #charly {
+        font-size: 1.1em;
+        color: rgb(9, 214, 241); 
+    }
+
+    .container_A span {
+        width: 100%;
+        height: 100%;
+        background: #efefef;
+        position: absolute;
+        z-index: -1;
+        transition: all 0.5s ease;
+    }
+
+    .container_A div {
+        position: relative;
+        width: auto;
+        background: #112031;
+        color: #555;
+        padding: 0.25em 0.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        font-family: American Typewriter;
+        cursor: pointer;
+        margin: 0.1em;
+        border-radius: 1em;
+        box-shadow: 0em 0em 0.3em rgba(0, 0, 0, 1);
+        transition: all 0.5s ease;
+    }
+
+    input[type='checkbox'] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+    }
+
+    input[type='checkbox']:checked ~ span {
+        background: #333;
+    }
+
+    input[type='checkbox']:checked ~ div {
+        box-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.5);
+        color: yellow;
+        text-shadow: 0em 0em 1em yellow, 0em 0em 1em yellow;
+        animation: glow 5s linear infinite;
+    }
+
+    @keyframes glow {
+        0% {
+        filter: hue-rotate(0deg);
+        }
+        100% {
+        filter: hue-rotate(360deg);
+        }
+    }
+
+    /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
+
+    .section2 {
+        width: 100vw;
+        height: 44vh;
+        background-color: #112031;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .section2_A {
+        width: 100vw;
+        height: 22vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section2_B {
+        width: 100vw;
+        height: 22vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titleA {
+        position: absolute;
+        top: 6.5em;
+        color: #fff;
+        display: block;
+        font-size: 0.6em;
+        margin: 0.5em 0 0.25em 0;
+        font-weight: bold;
+    }
+
+    .titleB {
+        position: absolute;
+        top: 27.5em;
+        color: #fff;
+        display: block;
+        font-size: 0.6em;
+        margin: 0.5em 0 0.25em 0;
+        font-weight: bold;
+    }
+
+    .wrapper {
+        border: 1px solid #ffffff;
+        height: 6em;
+        width: 6em;
+        position: absolute;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 600px;
+        perspective-origin: 50%;
+    }
+
+    .image-cube {
+        height: 7em;
+        width: 7em;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: 2s;
+    }
+
+    .image-cube div {
+        height: 7em;
+        width: 7em;
+        position: absolute;
+    }
+
+    .image-cubeA {
+        height: 7em;
+        width: 7em;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: 2s;
+    }
+
+    .image-cubeA div {
+        height: 7em;
+        width: 7em;
+        position: absolute;
+    }
+
+    img {
+        width: 100%;
+        height:100%;
+        transform: translateZ(0);
+    }
+
+    .front {
+        transform: translateZ(3.5em);
+    }
+
+    .right {
+        transform: rotateY(-270deg) translateX(3.5em);
+        transform-origin: 100% 0;
+    }
+
+    .back {
+        transform: translateZ(-3.5em) rotateY(180deg);
+    }
+
+    .left {
+        transform: rotateY(270deg) translateX(-3.5em);
+        transform-origin: 0 50%;
+    }
+
+    .btns {
+        margin-top: 1.5em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btns button {
+        background-color: transparent;
+        color: #fff;
+        border: 3px solid #fff;
+        padding: 0.25em 1.5em;
+        border-radius: 30px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    
+
+    /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
+
+    .section3 {
+        width: 100vw;
+        height: 7vh;
+        background-color: #020;
+    }
+
+    /* ** ***** ####################     Text Box Superior    #################### ***** ** */
+
+    .text-box{
+        background:#112031;
+        text-align: center;
+        overflow-x: hidden;
+        height: 8vh;
+        padding: 1em 0 1em 0;
+    }
+    
+    .text-box h2 {
+        font-size: 0.9em;
+        font-weight: 600;
+        font-family: 'Courier New', Courier, monospace;
+        color: #fff;
+        position: relative;
+    }
+    
+    .text-box h2::before, h2::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+    
+    .text-box h2::before {
+        background: #112031;
+        animation:  type 3s steps(25) 1s forwards infinite;
+        width: 100%;
+        
+    }
+    
+    .text-box span {
+        color: rgb(9, 214, 241);
+        font-weight: 900;
+        font-size: 0.9em;
+    }
+    
+    .text-box h2::after {
+        opacity: 1;
+        width: 0.2em; 
+        background: #fff;
+        color:#fff;
+        animation:  type 3s steps(25) 1s forwards infinite,
+                    blink 0.6s steps(15) infinite;
+    }
+    
+    @keyframes type {
+        to {
+        left: 110%;
+        }
+    }
+    
+    @keyframes blink {
+        0% , 50%{
+        opacity: 0;
+        } 
+        51%, 100% {
+        opacity: 1;
+        }
+    }
+
+}
+
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+/* ** ***** ##############          Código      Responsive         ############## ***** ** */
+/* ** ***** ##############              Escritorio 300            ############## ***** ** */
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+
+@media all and (max-width: 300px) {
+
+    body {
+      background-color: rgb(20, 240, 11);
+    }
+      
+    /* ############## *  **     Barra de Navegación    **  * ################ */
+    /* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
+
+    .section1 {
+        width: 100vw;
+        height: 7vh;
+        background-color: #000;
+    }
+
+    /* Efecto Disco */
+
+    .container_A {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+        background: #112031;
+        font-size: 0.5em;
+        color: #fff;
+        padding: 1em 0 0.5em 0;
+    }
+
+    .container_A i {
+        font-size: 1.1em;
+        padding: 0.25em;
+    }
+
+    #charly {
+        font-size: 1.1em;
+        color: rgb(9, 214, 241); 
+    }
+
+    .container_A span {
+        width: 100%;
+        height: 100%;
+        background: #efefef;
+        position: absolute;
+        z-index: -1;
+        transition: all 0.5s ease;
+    }
+
+    .container_A div {
+        position: relative;
+        width: auto;
+        background: #112031;
+        color: #555;
+        padding: 0.25em 0.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        font-family: American Typewriter;
+        cursor: pointer;
+        margin: 0.1em;
+        border-radius: 1em;
+        box-shadow: 0em 0em 0.3em rgba(0, 0, 0, 1);
+        transition: all 0.5s ease;
+    }
+
+    input[type='checkbox'] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+    }
+
+    input[type='checkbox']:checked ~ span {
+        background: #333;
+    }
+
+    input[type='checkbox']:checked ~ div {
+        box-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.5);
+        color: yellow;
+        text-shadow: 0em 0em 1em yellow, 0em 0em 1em yellow;
+        animation: glow 5s linear infinite;
+    }
+
+    @keyframes glow {
+        0% {
+        filter: hue-rotate(0deg);
+        }
+        100% {
+        filter: hue-rotate(360deg);
+        }
+    }
+
+    /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
+
+    .section2 {
+        width: 100vw;
+        height: 44vh;
+        background-color: #112031;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .section2_A {
+        width: 100vw;
+        height: 22vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section2_B {
+        width: 100vw;
+        height: 22vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titleA {
+        position: absolute;
+        top: 8em;
+        color: #fff;
+        display: block;
+        font-size: 0.6em;
+        margin: 0.5em 0 0.25em 0;
+        font-weight: bold;
+    }
+
+    .titleB {
+        position: absolute;
+        top: 29em;
+        color: #fff;
+        display: block;
+        font-size: 0.6em;
+        margin: 0.5em 0 0.25em 0;
+        font-weight: bold;
+    }
+
+    .wrapper {
+        border: 1px solid #ffffff;
+        height: 6em;
+        width: 6em;
+        position: absolute;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 600px;
+        perspective-origin: 50%;
+    }
+
+    .image-cube {
+        height: 7em;
+        width: 7em;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: 2s;
+    }
+
+    .image-cube div {
+        height: 7em;
+        width: 7em;
+        position: absolute;
+    }
+
+    .image-cubeA {
+        height: 7em;
+        width: 7em;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: 2s;
+    }
+
+    .image-cubeA div {
+        height: 7em;
+        width: 7em;
+        position: absolute;
+    }
+
+    img {
+        width: 100%;
+        height:100%;
+        transform: translateZ(0);
+    }
+
+    .front {
+        transform: translateZ(3.5em);
+    }
+
+    .right {
+        transform: rotateY(-270deg) translateX(3.5em);
+        transform-origin: 100% 0;
+    }
+
+    .back {
+        transform: translateZ(-3.5em) rotateY(180deg);
+    }
+
+    .left {
+        transform: rotateY(270deg) translateX(-3.5em);
+        transform-origin: 0 50%;
+    }
+
+    .btns {
+        margin-top: 1.5em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btns button {
+        background-color: transparent;
+        color: #fff;
+        border: 3px solid #fff;
+        padding: 0.25em 1.5em;
+        border-radius: 30px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    
+
+    /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
+
+    .section3 {
+        width: 100vw;
+        height: 7vh;
         background-color: #020;
     }
 
