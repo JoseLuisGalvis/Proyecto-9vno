@@ -2474,7 +2474,7 @@ img {
 
     .section1 {
         width: 100vw;
-        height: 14vh;
+        height: 16vh;
         background-color: #000;
     }
 
@@ -2565,7 +2565,7 @@ img {
 
     .section2 {
         width: 100vw;
-        height: 56vh;
+        height: 66vh;
         background-color: #112031;
         display: flex;
         flex-wrap: wrap;
@@ -2577,7 +2577,7 @@ img {
 
     .section2_A {
         width: 100vw;
-        height: 28vh;
+        height: 33vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -2586,7 +2586,7 @@ img {
 
     .section2_B {
         width: 100vw;
-        height: 28vh;
+        height: 33vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -2595,7 +2595,7 @@ img {
 
     .titleA {
         position: absolute;
-        top: 15em;
+        top: 20em;
         color: #fff;
         display: block;
         font-size: 0.6em;
@@ -2605,7 +2605,7 @@ img {
 
     .titleB {
         position: absolute;
-        top: 41em;
+        top: 52em;
         color: #fff;
         display: block;
         font-size: 0.6em;
@@ -2703,7 +2703,7 @@ img {
 
     .section3 {
         width: 100vw;
-        height: 10vh;
+        height: 13vh;
         background-color: #020;
     }
 
@@ -2713,8 +2713,8 @@ img {
         background:#112031;
         text-align: center;
         overflow-x: hidden;
-        height: 10vh;
-        padding: 0.5em 0 1em 0;
+        height: 13vh;
+        padding: 1em 0;
     }
     
     .text-box h2 {
