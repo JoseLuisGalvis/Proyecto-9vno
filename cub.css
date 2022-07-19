@@ -310,314 +310,9 @@ img {
 
             /* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
 
-            .section1 {
-                width: 100vw;
-                height: 16vh;
-                background-color: #000;
-            }
-        
-            /* Efecto Disco */
-        
-            .container_A {
-                position: relative;
-                display: flex;
-                width: 100%;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-                flex-direction: row;
-                background: #112031;
-                font-size: 1em;
-                color: #fff;
-                padding: 1em 0 0 1em 0;
-            }
-        
-            .container_A i {
-                font-size: 1.2em;
-                padding: 1em;
-            }
-        
-            #charly {
-                font-size: 1.2em;
-                color: rgb(9, 214, 241); 
-            }
-        
-            .container_A span {
-                width: 100%;
-                height: 100%;
-                background: #efefef;
-                position: absolute;
-                z-index: -1;
-                transition: all 0.5s ease;
-            }
-        
-            .container_A div {
-                position: relative;
-                width: auto;
-                background: #112031;
-                color: #555;
-                padding: 0.5em 1em;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 2.5em;
-                font-family: American Typewriter;
-                cursor: pointer;
-                margin: 0 4px;
-                border-radius: 25px;
-                box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
-                transition: all 0.5s ease;
-            }
-        
-            input[type='checkbox'] {
-                position: absolute;
-                opacity: 0;
-                cursor: pointer;
-                height: 100%;
-                width: 100%;
-                z-index: 100;
-            }
-        
-            input[type='checkbox']:checked ~ span {
-                background: #333;
-            }
-        
-            input[type='checkbox']:checked ~ div {
-                box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
-                color: yellow;
-                text-shadow: 0 0 15px yellow, 0 0 25px yellow;
-                animation: glow 5s linear infinite;
-            }
-        
-            @keyframes glow {
-                0% {
-                filter: hue-rotate(0deg);
-                }
-                100% {
-                filter: hue-rotate(360deg);
-                }
-            }
-        
-            /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
-        
-            .section2 {
-                width: 100vw;
-                height: 74vh;
-                background-color: #112031;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-                flex-direction: row;
-            }
-        
-            .section2_A {
-                width: 50vw;
-                height: 72vh;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-            }
-        
-            .section2_B {
-                width: 50vw;
-                height: 72vh;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-            }
-        
-            .titleA {
-                position: absolute;
-                top: 15em;
-                color: #fff;
-            }
-        
-            .titleB {
-                position: absolute;
-                top: 15em;
-                color: #fff;
-            }
-        
-            .wrapper {
-                border: 1px solid #ffffff;
-                height: 300px;
-                width: 300px;
-                position: absolute;
-            }
-        
-            .container {
-                height: 100%;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                perspective: 800px;
-                perspective-origin: 50%;
-            }
-        
-            .image-cube {
-                width: 300px;
-                height: 300px;
-                transform-style: preserve-3d;
-                position: relative;
-                transition: 2s;
-            }
-        
-            .image-cube div {
-                height: 300px;
-                width: 300px;
-                position: absolute;
-            }
-        
-            .image-cubeA {
-                width: 300px;
-                height: 300px;
-                transform-style: preserve-3d;
-                position: relative;
-                transition: 2s;
-            }
-        
-            .image-cubeA div {
-                height: 300px;
-                width: 300px;
-                position: absolute;
-            }
-        
-            img {
-                width: 100%;
-                height:100%;
-                transform: translateZ(0);
-            }
-        
-            .front {
-                transform: translateZ(150px);
-            }
-        
-            .right {
-                transform: rotateY(-270deg) translateX(150px);
-                transform-origin: 100% 0;
-            }
-        
-            .back {
-                transform: translateZ(-150px) rotateY(180deg);
-            }
-        
-            .left {
-                transform: rotateY(270deg) translateX(-150px);
-                transform-origin: 0 50%;
-            }
-        
-            .btns {
-                margin-top: 80px;
-                display: flex;
-                justify-content: space-between;
-            }
-        
-            .btns button {
-                background-color: transparent;
-                color: #fff;
-                border: 3px solid #fff;
-                padding: 8px 40px;
-                border-radius: 30px;
-                font-size: 20px;
-                cursor: pointer;
-            }
-            
-        
-            /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
-        
-            .section3 {
-                width: 100vw;
-                height: 10vh;
-                background-color: #020;
-            }
-        
-            /* ** ***** ####################     Text Box Superior    #################### ***** ** */
-        
-            .text-box{
-                background:#112031;
-                text-align: center;
-                overflow-x: hidden;
-                height: 10vh;
-                padding: 0.5em 0 0.5em 0;
-            }
-            
-            .text-box h2 {
-                font-size: 1.6em;
-                font-weight: 600;
-                font-family: 'Courier New', Courier, monospace;
-                color: #fff;
-                position: relative;
-            }
-        
-            .text-box h2::before, h2::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-            }
-        
-            .text-box h2::before {
-                background: #112031;
-                animation:  type 3s steps(25) 1s forwards infinite;
-                width: 100%;
-                
-            }
-        
-            .text-box span {
-                color: rgb(9, 214, 241);
-                font-weight: 900;
-                font-size: 1.3em;
-            }
-            
-            .text-box h2::after {
-                opacity: 1;
-                width: 2px; 
-                background: #fff;
-                color:#fff;
-                animation:  type 3s steps(25) 1s forwards infinite,
-                            blink 0.6s steps(15) infinite;
-            }
-            
-            @keyframes type {
-                to {
-                left: 110%;
-                }
-            }
-            
-            @keyframes blink {
-                0% , 50%{
-                opacity: 0;
-                } 
-                51%, 100% {
-                opacity: 1;
-                }
-            }
-
-}
-
-
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-/* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############              Escritorio 1400            ############## ***** ** */
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-
-@media all and (max-width: 1400px) {
-
-    body {
-        background-color: rgb(130, 350, 23);
-    }
-
-    /* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
-
     .section1 {
         width: 100vw;
-        height: 12vh;
+        height: 15vh;
         background-color: #000;
     }
 
@@ -627,6 +322,7 @@ img {
         position: relative;
         display: flex;
         width: 100%;
+        height: 15vh;
         align-items: center;
         text-align: center;
         justify-content: center;
@@ -638,12 +334,12 @@ img {
     }
 
     .container_A i {
-        font-size: 1em;
+        font-size: 1.1em;
         padding: 0.5em;
     }
 
     #charly {
-        font-size: 1em;
+        font-size: 1.1em;
         color: rgb(9, 214, 241); 
     }
 
@@ -665,311 +361,7 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2.2em;
-        font-family: American Typewriter;
-        cursor: pointer;
-        margin: 0 4px;
-        border-radius: 25px;
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
-        transition: all 0.5s ease;
-    }
-
-    input[type='checkbox'] {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 100%;
-        width: 100%;
-        z-index: 100;
-    }
-
-    input[type='checkbox']:checked ~ span {
-        background: #333;
-    }
-
-    input[type='checkbox']:checked ~ div {
-        box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
-        color: yellow;
-        text-shadow: 0 0 15px yellow, 0 0 25px yellow;
-        animation: glow 5s linear infinite;
-    }
-
-    @keyframes glow {
-        0% {
-        filter: hue-rotate(0deg);
-        }
-        100% {
-        filter: hue-rotate(360deg);
-        }
-    }
-        
-            /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
-        
-            .section2 {
-                width: 100vw;
-                height: 70vh;
-                background-color: #112031;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-                flex-direction: row;
-            }
-        
-            .section2_A {
-                width: 50vw;
-                height: 70vh;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-            }
-        
-            .section2_B {
-                width: 50vw;
-                height: 70vh;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-            }
-        
-            .titleA {
-                position: absolute;
-                top: 10em;
-                color: #fff;
-            }
-        
-            .titleB {
-                position: absolute;
-                top: 10em;
-                color: #fff;
-            }
-        
-            .wrapper {
-                border: 1px solid #ffffff;
-                height: 300px;
-                width: 300px;
-                position: absolute;
-            }
-        
-            .container {
-                height: 100%;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                perspective: 800px;
-                perspective-origin: 50%;
-            }
-        
-            .image-cube {
-                width: 300px;
-                height: 300px;
-                transform-style: preserve-3d;
-                position: relative;
-                transition: 2s;
-            }
-        
-            .image-cube div {
-                height: 300px;
-                width: 300px;
-                position: absolute;
-            }
-        
-            .image-cubeA {
-                width: 300px;
-                height: 300px;
-                transform-style: preserve-3d;
-                position: relative;
-                transition: 2s;
-            }
-        
-            .image-cubeA div {
-                height: 300px;
-                width: 300px;
-                position: absolute;
-            }
-        
-            img {
-                width: 100%;
-                height:100%;
-                transform: translateZ(0);
-            }
-        
-            .front {
-                transform: translateZ(150px);
-            }
-        
-            .right {
-                transform: rotateY(-270deg) translateX(150px);
-                transform-origin: 100% 0;
-            }
-        
-            .back {
-                transform: translateZ(-150px) rotateY(180deg);
-            }
-        
-            .left {
-                transform: rotateY(270deg) translateX(-150px);
-                transform-origin: 0 50%;
-            }
-        
-            .btns {
-                margin-top: 80px;
-                display: flex;
-                justify-content: space-between;
-            }
-        
-            .btns button {
-                background-color: transparent;
-                color: #fff;
-                border: 3px solid #fff;
-                padding: 8px 40px;
-                border-radius: 30px;
-                font-size: 20px;
-                cursor: pointer;
-            }
-            
-        
-            /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
-        
-            .section3 {
-                width: 100vw;
-                height: 10vh;
-                background-color: #020;
-            }
-        
-            /* ** ***** ####################     Text Box Superior    #################### ***** ** */
-        
-            .text-box{
-                background:#112031;
-                text-align: center;
-                overflow-x: hidden;
-                height: 10vh;
-                padding: 0.5em 0 0.5em 0;
-            }
-            
-            .text-box h2 {
-                font-size: 1.6em;
-                font-weight: 600;
-                font-family: 'Courier New', Courier, monospace;
-                color: #fff;
-                position: relative;
-            }
-        
-            .text-box h2::before, h2::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-            }
-        
-            .text-box h2::before {
-                background: #112031;
-                animation:  type 3s steps(25) 1s forwards infinite;
-                width: 100%;
-                
-            }
-        
-            .text-box span {
-                color: rgb(9, 214, 241);
-                font-weight: 900;
-                font-size: 1.3em;
-            }
-            
-            .text-box h2::after {
-                opacity: 1;
-                width: 2px; 
-                background: #fff;
-                color:#fff;
-                animation:  type 3s steps(25) 1s forwards infinite,
-                            blink 0.6s steps(15) infinite;
-            }
-            
-            @keyframes type {
-                to {
-                left: 110%;
-                }
-            }
-            
-            @keyframes blink {
-                0% , 50%{
-                opacity: 0;
-                } 
-                51%, 100% {
-                opacity: 1;
-                }
-            }
-                    
-}
-
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-/* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############              Escritorio 1200            ############## ***** ** */
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-
-@media all and (max-width: 1200px) {
-
-    body {
-        background-color: rgb(120, 340, 22);
-    }
-
-    /* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
-
-    .section1 {
-        width: 100vw;
-        height: 12vh;
-        background-color: #000;
-    }
-
-    /* Efecto Disco */
-
-    .container_A {
-        position: relative;
-        display: flex;
-        width: 100%;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        flex-direction: row;
-        background: #112031;
-        font-size: 1em;
-        color: #fff;
-        padding: 1.4em 0 1.2em 0;
-    }
-
-    .container_A i {
-        font-size: 1em;
-        padding: 0.5em;
-    }
-
-    #charly {
-        font-size: 1em;
-        color: rgb(9, 214, 241); 
-    }
-
-    .container_A span {
-        width: 100%;
-        height: 100%;
-        background: #efefef;
-        position: absolute;
-        z-index: -1;
-        transition: all 0.5s ease;
-    }
-
-    .container_A div {
-        position: relative;
-        width: auto;
-        background: #112031;
-        color: #555;
-        padding: 0.5em 1em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2em;
+        font-size: 2.4em;
         font-family: American Typewriter;
         cursor: pointer;
         margin: 0 4px;
@@ -1011,7 +403,7 @@ img {
 
     .section2 {
         width: 100vw;
-        height: 64vh;
+        height: 65vh;
         background-color: #112031;
         display: flex;
         flex-wrap: wrap;
@@ -1023,7 +415,7 @@ img {
 
     .section2_A {
         width: 50vw;
-        height: 60vh;
+        height: 65vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -1032,7 +424,7 @@ img {
 
     .section2_B {
         width: 50vw;
-        height: 60vh;
+        height: 65vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -1041,13 +433,13 @@ img {
 
     .titleA {
         position: absolute;
-        top: 10em;
+        top: 12em;
         color: #fff;
     }
 
     .titleB {
         position: absolute;
-        top: 10em;
+        top: 12em;
         color: #fff;
     }
 
@@ -1141,7 +533,7 @@ img {
 
     .section3 {
         width: 100vw;
-        height: 14vh;
+        height: 20vh;
         background-color: #020;
     }
 
@@ -1151,8 +543,619 @@ img {
         background:#112031;
         text-align: center;
         overflow-x: hidden;
-        height: 14vh;
-        padding: 1em 2em 0.8em 2em;
+        height: 20vh;
+        padding: 3em 2em 0.8em 2em;
+    }
+
+    .text-box h2 {
+        font-size: 1.6em;
+        font-weight: 600;
+        font-family: 'Courier New', Courier, monospace;
+        color: #fff;
+        position: relative;
+    }
+
+    .text-box h2::before, h2::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    .text-box h2::before {
+        background: #112031;
+        animation:  type 3s steps(25) 1s forwards infinite;
+        width: 100%;
+        
+    }
+
+    .text-box span {
+        color: rgb(9, 214, 241);
+        font-weight: 900;
+        font-size: 1.3em;
+    }
+
+    .text-box h2::after {
+        opacity: 1;
+        width: 2px; 
+        background: #fff;
+        color:#fff;
+        animation:  type 3s steps(25) 1s forwards infinite,
+                    blink 0.6s steps(15) infinite;
+    }
+
+    @keyframes type {
+        to {
+        left: 110%;
+        }
+    }
+
+    @keyframes blink {
+        0% , 50%{
+        opacity: 0;
+        } 
+        51%, 100% {
+        opacity: 1;
+        }
+    }
+
+}
+
+
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+/* ** ***** ##############          Código      Responsive         ############## ***** ** */
+/* ** ***** ##############              Escritorio 1400            ############## ***** ** */
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+
+@media all and (max-width: 1400px) {
+
+    body {
+        background-color: rgb(130, 350, 23);
+    }
+
+    /* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
+
+    .section1 {
+        width: 100vw;
+        height: 15vh;
+        background-color: #000;
+    }
+
+    /* Efecto Disco */
+
+    .container_A {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 15vh;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+        background: #112031;
+        font-size: 1em;
+        color: #fff;
+        padding: 1.4em 0 1.2em 0;
+    }
+
+    .container_A i {
+        font-size: 1.1em;
+        padding: 0.5em;
+    }
+
+    #charly {
+        font-size: 1.1em;
+        color: rgb(9, 214, 241); 
+    }
+
+    .container_A span {
+        width: 100%;
+        height: 100%;
+        background: #efefef;
+        position: absolute;
+        z-index: -1;
+        transition: all 0.5s ease;
+    }
+
+    .container_A div {
+        position: relative;
+        width: auto;
+        background: #112031;
+        color: #555;
+        padding: 0.5em 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.2em;
+        font-family: American Typewriter;
+        cursor: pointer;
+        margin: 0 4px;
+        border-radius: 25px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+        transition: all 0.5s ease;
+    }
+
+    input[type='checkbox'] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+    }
+
+    input[type='checkbox']:checked ~ span {
+        background: #333;
+    }
+
+    input[type='checkbox']:checked ~ div {
+        box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+        color: yellow;
+        text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+        animation: glow 5s linear infinite;
+    }
+
+    @keyframes glow {
+        0% {
+        filter: hue-rotate(0deg);
+        }
+        100% {
+        filter: hue-rotate(360deg);
+        }
+    }
+
+    /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
+
+    .section2 {
+        width: 100vw;
+        height: 65vh;
+        background-color: #112031;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .section2_A {
+        width: 50vw;
+        height: 65vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section2_B {
+        width: 50vw;
+        height: 65vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titleA {
+        position: absolute;
+        top: 12em;
+        color: #fff;
+    }
+
+    .titleB {
+        position: absolute;
+        top: 12em;
+        color: #fff;
+    }
+
+    .wrapper {
+        border: 1px solid #ffffff;
+        height: 300px;
+        width: 300px;
+        position: absolute;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 800px;
+        perspective-origin: 50%;
+    }
+
+    .image-cube {
+        width: 300px;
+        height: 300px;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: 2s;
+    }
+
+    .image-cube div {
+        height: 300px;
+        width: 300px;
+        position: absolute;
+    }
+
+    .image-cubeA {
+        width: 300px;
+        height: 300px;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: 2s;
+    }
+
+    .image-cubeA div {
+        height: 300px;
+        width: 300px;
+        position: absolute;
+    }
+
+    img {
+        width: 100%;
+        height:100%;
+        transform: translateZ(0);
+    }
+
+    .front {
+        transform: translateZ(150px);
+    }
+
+    .right {
+        transform: rotateY(-270deg) translateX(150px);
+        transform-origin: 100% 0;
+    }
+
+    .back {
+        transform: translateZ(-150px) rotateY(180deg);
+    }
+
+    .left {
+        transform: rotateY(270deg) translateX(-150px);
+        transform-origin: 0 50%;
+    }
+
+    .btns {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btns button {
+        background-color: transparent;
+        color: #fff;
+        border: 3px solid #fff;
+        padding: 8px 40px;
+        border-radius: 30px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+
+    /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
+
+    .section3 {
+        width: 100vw;
+        height: 20vh;
+        background-color: #020;
+    }
+
+    /* ** ***** ####################     Text Box Superior    #################### ***** ** */
+
+    .text-box{
+        background:#112031;
+        text-align: center;
+        overflow-x: hidden;
+        height: 20vh;
+        padding: 3em 2em 0.8em 2em;
+    }
+
+    .text-box h2 {
+        font-size: 1.6em;
+        font-weight: 600;
+        font-family: 'Courier New', Courier, monospace;
+        color: #fff;
+        position: relative;
+    }
+
+    .text-box h2::before, h2::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    .text-box h2::before {
+        background: #112031;
+        animation:  type 3s steps(25) 1s forwards infinite;
+        width: 100%;
+        
+    }
+
+    .text-box span {
+        color: rgb(9, 214, 241);
+        font-weight: 900;
+        font-size: 1.3em;
+    }
+
+    .text-box h2::after {
+        opacity: 1;
+        width: 2px; 
+        background: #fff;
+        color:#fff;
+        animation:  type 3s steps(25) 1s forwards infinite,
+                    blink 0.6s steps(15) infinite;
+    }
+
+    @keyframes type {
+        to {
+        left: 110%;
+        }
+    }
+
+    @keyframes blink {
+        0% , 50%{
+        opacity: 0;
+        } 
+        51%, 100% {
+        opacity: 1;
+        }
+    }
+                    
+}
+
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+/* ** ***** ##############          Código      Responsive         ############## ***** ** */
+/* ** ***** ##############              Escritorio 1200            ############## ***** ** */
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+
+@media all and (max-width: 1200px) {
+
+    body {
+        background-color: rgb(120, 340, 22);
+    }
+
+    /* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
+
+    .section1 {
+        width: 100vw;
+        height: 15vh;
+        background-color: #000;
+    }
+
+    /* Efecto Disco */
+
+    .container_A {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 15vh;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+        background: #112031;
+        font-size: 1em;
+        color: #fff;
+        padding: 1.4em 0 1.2em 0;
+    }
+
+    .container_A i {
+        font-size: 1em;
+        padding: 0.5em;
+    }
+
+    #charly {
+        font-size: 1em;
+        color: rgb(9, 214, 241); 
+    }
+
+    .container_A span {
+        width: 100%;
+        height: 100%;
+        background: #efefef;
+        position: absolute;
+        z-index: -1;
+        transition: all 0.5s ease;
+    }
+
+    .container_A div {
+        position: relative;
+        width: auto;
+        background: #112031;
+        color: #555;
+        padding: 0.5em 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        font-family: American Typewriter;
+        cursor: pointer;
+        margin: 0 4px;
+        border-radius: 25px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+        transition: all 0.5s ease;
+    }
+
+    input[type='checkbox'] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+    }
+
+    input[type='checkbox']:checked ~ span {
+        background: #333;
+    }
+
+    input[type='checkbox']:checked ~ div {
+        box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+        color: yellow;
+        text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+        animation: glow 5s linear infinite;
+    }
+
+    @keyframes glow {
+        0% {
+        filter: hue-rotate(0deg);
+        }
+        100% {
+        filter: hue-rotate(360deg);
+        }
+    }
+
+    /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
+
+    .section2 {
+        width: 100vw;
+        height: 65vh;
+        background-color: #112031;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .section2_A {
+        width: 50vw;
+        height: 65vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section2_B {
+        width: 50vw;
+        height: 65vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titleA {
+        position: absolute;
+        top: 12em;
+        color: #fff;
+    }
+
+    .titleB {
+        position: absolute;
+        top: 12em;
+        color: #fff;
+    }
+
+    .wrapper {
+        border: 1px solid #ffffff;
+        height: 300px;
+        width: 300px;
+        position: absolute;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 800px;
+        perspective-origin: 50%;
+    }
+
+    .image-cube {
+        width: 300px;
+        height: 300px;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: 2s;
+    }
+
+    .image-cube div {
+        height: 300px;
+        width: 300px;
+        position: absolute;
+    }
+
+    .image-cubeA {
+        width: 300px;
+        height: 300px;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: 2s;
+    }
+
+    .image-cubeA div {
+        height: 300px;
+        width: 300px;
+        position: absolute;
+    }
+
+    img {
+        width: 100%;
+        height:100%;
+        transform: translateZ(0);
+    }
+
+    .front {
+        transform: translateZ(150px);
+    }
+
+    .right {
+        transform: rotateY(-270deg) translateX(150px);
+        transform-origin: 100% 0;
+    }
+
+    .back {
+        transform: translateZ(-150px) rotateY(180deg);
+    }
+
+    .left {
+        transform: rotateY(270deg) translateX(-150px);
+        transform-origin: 0 50%;
+    }
+
+    .btns {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btns button {
+        background-color: transparent;
+        color: #fff;
+        border: 3px solid #fff;
+        padding: 8px 40px;
+        border-radius: 30px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+
+    /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
+
+    .section3 {
+        width: 100vw;
+        height: 20vh;
+        background-color: #020;
+    }
+
+    /* ** ***** ####################     Text Box Superior    #################### ***** ** */
+
+    .text-box{
+        background:#112031;
+        text-align: center;
+        overflow-x: hidden;
+        height: 20vh;
+        padding: 2em 2em 0.8em 2em;
     }
 
     .text-box h2 {
@@ -1235,6 +1238,7 @@ img {
     .container_A {
         position: relative;
         width: 100%;
+        height: 20vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -1317,7 +1321,7 @@ img {
     
         .section2 {
             width: 100vw;
-            height: 64vh;
+            height: 65vh;
             background-color: #112031;
             display: flex;
             flex-wrap: wrap;
@@ -1329,7 +1333,7 @@ img {
     
         .section2_A {
             width: 50vw;
-            height: 60vh;
+            height: 65vh;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -1338,7 +1342,7 @@ img {
     
         .section2_B {
             width: 50vw;
-            height: 60vh;
+            height: 65vh;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -1447,7 +1451,7 @@ img {
     
         .section3 {
             width: 100vw;
-            height: 14vh;
+            height: 15vh;
             background-color: #020;
         }
     
@@ -1457,7 +1461,7 @@ img {
             background:#112031;
             text-align: center;
             overflow-x: hidden;
-            height: 14vh;
+            height: 15vh;
             padding: 1em 2em 0.8em 2em;
         }
         
@@ -1532,7 +1536,7 @@ img {
 
     .section1 {
         width: 100vw;
-        height: 20vh;
+        height: 25vh;
         background-color: #000;
     }
 
@@ -1541,6 +1545,7 @@ img {
     .container_A {
         position: relative;
         width: 100%;
+        height: 25vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -1620,10 +1625,10 @@ img {
     }
 
     /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
-
+    
     .section2 {
         width: 100vw;
-        height: 50vh;
+        height: 60vh;
         background-color: #112031;
         display: flex;
         flex-wrap: wrap;
@@ -1635,7 +1640,7 @@ img {
 
     .section2_A {
         width: 50vw;
-        height: 25vh;
+        height: 60vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -1644,7 +1649,7 @@ img {
 
     .section2_B {
         width: 50vw;
-        height: 25vh;
+        height: 60vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -1653,28 +1658,20 @@ img {
 
     .titleA {
         position: absolute;
-        top: 20em;
+        top: 16em;
         color: #fff;
-        display: block;
-        font-size: 0.9em;
-        margin: 0.5em 0 0.25em 0;
-        font-weight: bold;
     }
 
     .titleB {
         position: absolute;
-        top: 20em;
+        top: 16em;
         color: #fff;
-        display: block;
-        font-size: 0.9em;
-        margin: 0.5em 0 0.25em 0;
-        font-weight: bold;
     }
 
     .wrapper {
         border: 1px solid #ffffff;
-        height: 6em;
-        width: 6em;
+        height: 300px;
+        width: 300px;
         position: absolute;
     }
 
@@ -1684,35 +1681,35 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        perspective: 600px;
+        perspective: 800px;
         perspective-origin: 50%;
     }
 
     .image-cube {
-        height: 7em;
-        width: 7em;
+        width: 300px;
+        height: 300px;
         transform-style: preserve-3d;
         position: relative;
         transition: 2s;
     }
 
     .image-cube div {
-        height: 7em;
-        width: 7em;
+        height: 300px;
+        width: 300px;
         position: absolute;
     }
 
     .image-cubeA {
-        height: 7em;
-        width: 7em;
+        width: 300px;
+        height: 300px;
         transform-style: preserve-3d;
         position: relative;
         transition: 2s;
     }
 
     .image-cubeA div {
-        height: 7em;
-        width: 7em;
+        height: 300px;
+        width: 300px;
         position: absolute;
     }
 
@@ -1723,25 +1720,25 @@ img {
     }
 
     .front {
-        transform: translateZ(3.5em);
+        transform: translateZ(150px);
     }
 
     .right {
-        transform: rotateY(-270deg) translateX(3.5em);
+        transform: rotateY(-270deg) translateX(150px);
         transform-origin: 100% 0;
     }
 
     .back {
-        transform: translateZ(-3.5em) rotateY(180deg);
+        transform: translateZ(-150px) rotateY(180deg);
     }
 
     .left {
-        transform: rotateY(270deg) translateX(-3.5em);
+        transform: rotateY(270deg) translateX(-150px);
         transform-origin: 0 50%;
     }
 
     .btns {
-        margin-top: 1.5em;
+        margin-top: 80px;
         display: flex;
         justify-content: space-between;
     }
@@ -1750,9 +1747,9 @@ img {
         background-color: transparent;
         color: #fff;
         border: 3px solid #fff;
-        padding: 0.25em 1.5em;
+        padding: 8px 40px;
         border-radius: 30px;
-        font-size: 12px;
+        font-size: 20px;
         cursor: pointer;
     }
 
@@ -1761,7 +1758,7 @@ img {
 
     .section3 {
         width: 100vw;
-        height: 14vh;
+        height: 15vh;
         background-color: #020;
     }
 
@@ -1771,8 +1768,8 @@ img {
         background:#112031;
         text-align: center;
         overflow-x: hidden;
-        height: 14vh;
-        padding: 1em 2em ;
+        height: 15vh;
+        padding: 2em;
     }
 
     .text-box h2 {
@@ -1846,7 +1843,7 @@ img {
 
     .section1 {
         width: 100vw;
-        height: 20vh;
+        height: 25vh;
         background-color: #000;
     }
 
@@ -1855,6 +1852,7 @@ img {
     .container_A {
         position: relative;
         width: 100%;
+        height: 26vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -1862,18 +1860,18 @@ img {
         justify-content: center;
         flex-direction: row;
         background: #112031;
-        font-size: 1.2em;
+        font-size: 1em;
         color: #fff;
-        padding: 2em 0.5em;
+        padding: 1.5em 0.5em 1.5em 0.5em;
     }
 
     .container_A i {
-        font-size: 1.2em;
-        padding: 0.25em;
+        font-size: 1.1em;
+        padding: 0.3em;
     }
 
     #charly {
-        font-size: 1em;
+        font-size: 1.1em;
         color: rgb(9, 214, 241); 
     }
 
@@ -1895,7 +1893,7 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2em;
+        font-size: 2.3em;
         font-family: American Typewriter;
         cursor: pointer;
         margin: 0.1em;
@@ -1933,11 +1931,12 @@ img {
         }
     }
 
+
     /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
 
     .section2 {
         width: 100vw;
-        height: 50vh;
+        height: 60vh;
         background-color: #112031;
         display: flex;
         flex-wrap: wrap;
@@ -1949,7 +1948,7 @@ img {
 
     .section2_A {
         width: 50vw;
-        height: 25vh;
+        height: 60vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -1958,7 +1957,7 @@ img {
 
     .section2_B {
         width: 50vw;
-        height: 25vh;
+        height: 60vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -1967,20 +1966,20 @@ img {
 
     .titleA {
         position: absolute;
-        top: 26em;
+        top: 30em;
         color: #fff;
         display: block;
-        font-size: 0.7em;
+        font-size: 0.8em;
         margin: 0.5em 0 0.25em 0;
         font-weight: bold;
     }
 
     .titleB {
         position: absolute;
-        top: 26em;
+        top: 30em;
         color: #fff;
         display: block;
-        font-size: 0.7em;
+        font-size: 0.8em;
         margin: 0.5em 0 0.25em 0;
         font-weight: bold;
     }
@@ -2075,7 +2074,7 @@ img {
 
     .section3 {
         width: 100vw;
-        height: 14vh;
+        height: 15vh;
         background-color: #020;
     }
 
@@ -2085,12 +2084,12 @@ img {
         background:#112031;
         text-align: center;
         overflow-x: hidden;
-        height: 14vh;
-        padding: 1em 2em ;
+        height: 15vh;
+        padding: 2em 1em 1em 1em;
     }
     
     .text-box h2 {
-        font-size: 1.5em;
+        font-size: 1.4em;
         font-weight: 600;
         font-family: 'Courier New', Courier, monospace;
         color: #fff;
@@ -2115,7 +2114,7 @@ img {
     .text-box span {
         color: rgb(9, 214, 241);
         font-weight: 900;
-        font-size: 1em;
+        font-size: 1.3em;
     }
     
     .text-box h2::after {
@@ -2155,102 +2154,104 @@ img {
         background-color: rgb(60, 280, 16);
     }
 
-    /* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
+/* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
 
-    .section1 {
-        width: 100vw;
-        height: 20vh;
-        background-color: #000;
+.section1 {
+    width: 100vw;
+    height: 25vh;
+    background-color: #000;
+}
+
+/* Efecto Disco */
+
+.container_A {
+    position: relative;
+    width: 100%;
+    height: 26vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    background: #112031;
+    font-size: 1em;
+    color: #fff;
+    padding: 1.5em 0.5em 1.5em 0.5em;
+}
+
+.container_A i {
+    font-size: 1.1em;
+    padding: 0.3em;
+}
+
+#charly {
+    font-size: 1.1em;
+    color: rgb(9, 214, 241); 
+}
+
+.container_A span {
+    width: 100%;
+    height: 100%;
+    background: #efefef;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+.container_A div {
+    position: relative;
+    width: auto;
+    background: #112031;
+    color: #555;
+    padding: 0.25em 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: American Typewriter;
+    cursor: pointer;
+    margin: 0.1em;
+    border-radius: 1em;
+    box-shadow: 0em 0em 0.3em rgba(0, 0, 0, 1);
+    transition: all 0.5s ease;
+}
+
+input[type='checkbox'] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+input[type='checkbox']:checked ~ span {
+    background: #333;
+}
+
+input[type='checkbox']:checked ~ div {
+    box-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.5);
+    color: yellow;
+    text-shadow: 0em 0em 1em yellow, 0em 0em 1em yellow;
+    animation: glow 5s linear infinite;
+}
+
+@keyframes glow {
+    0% {
+    filter: hue-rotate(0deg);
     }
-
-    /* Efecto Disco */
-
-    .container_A {
-        position: relative;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        flex-direction: row;
-        background: #112031;
-        font-size: 1em;
-        color: #fff;
-        padding: 2em 0.5em;
+    100% {
+    filter: hue-rotate(360deg);
     }
+}
 
-    .container_A i {
-        font-size: 1.2em;
-        padding: 0.25em;
-    }
-
-    #charly {
-        font-size: 1em;
-        color: rgb(9, 214, 241); 
-    }
-
-    .container_A span {
-        width: 100%;
-        height: 100%;
-        background: #efefef;
-        position: absolute;
-        z-index: -1;
-        transition: all 0.5s ease;
-    }
-
-    .container_A div {
-        position: relative;
-        width: auto;
-        background: #112031;
-        color: #555;
-        padding: 0.25em 0.5em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.8em;
-        font-family: American Typewriter;
-        cursor: pointer;
-        margin: 0.1em;
-        border-radius: 1em;
-        box-shadow: 0em 0em 0.3em rgba(0, 0, 0, 1);
-        transition: all 0.5s ease;
-    }
-
-    input[type='checkbox'] {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 100%;
-        width: 100%;
-        z-index: 100;
-    }
-
-    input[type='checkbox']:checked ~ span {
-        background: #333;
-    }
-
-    input[type='checkbox']:checked ~ div {
-        box-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.5);
-        color: yellow;
-        text-shadow: 0em 0em 1em yellow, 0em 0em 1em yellow;
-        animation: glow 5s linear infinite;
-    }
-
-    @keyframes glow {
-        0% {
-        filter: hue-rotate(0deg);
-        }
-        100% {
-        filter: hue-rotate(360deg);
-        }
-    }
 
     /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
 
     .section2 {
         width: 100vw;
-        height: 50vh;
+        height: 60vh;
         background-color: #112031;
         display: flex;
         flex-wrap: wrap;
@@ -2261,8 +2262,8 @@ img {
     }
 
     .section2_A {
-        width: 50vw;
-        height: 25vh;
+        width: 100vw;
+        height: 30vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -2270,8 +2271,8 @@ img {
     }
 
     .section2_B {
-        width: 50vw;
-        height: 25vh;
+        width: 100vw;
+        height: 30vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -2280,20 +2281,20 @@ img {
 
     .titleA {
         position: absolute;
-        top: 26em;
+        top: 27em;
         color: #fff;
         display: block;
-        font-size: 0.7em;
+        font-size: 0.6em;
         margin: 0.5em 0 0.25em 0;
         font-weight: bold;
     }
 
     .titleB {
         position: absolute;
-        top: 26em;
+        top: 55em;
         color: #fff;
         display: block;
-        font-size: 0.7em;
+        font-size: 0.6em;
         margin: 0.5em 0 0.25em 0;
         font-weight: bold;
     }
@@ -2388,7 +2389,7 @@ img {
 
     .section3 {
         width: 100vw;
-        height: 14vh;
+        height: 15vh;
         background-color: #020;
     }
 
@@ -2398,12 +2399,12 @@ img {
         background:#112031;
         text-align: center;
         overflow-x: hidden;
-        height: 14vh;
-        padding: 1em 2em ;
+        height: 15vh;
+        padding: 2em 1em 1em 1em;
     }
     
     .text-box h2 {
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-weight: 600;
         font-family: 'Courier New', Courier, monospace;
         color: #fff;
@@ -2428,7 +2429,7 @@ img {
     .text-box span {
         color: rgb(9, 214, 241);
         font-weight: 900;
-        font-size: 1em;
+        font-size: 1.2em;
     }
     
     .text-box h2::after {
@@ -2454,6 +2455,7 @@ img {
         opacity: 1;
         }
     }
+
             
 }
 
@@ -2474,7 +2476,7 @@ img {
 
     .section1 {
         width: 100vw;
-        height: 16vh;
+        height: 25vh;
         background-color: #000;
     }
 
@@ -2483,6 +2485,7 @@ img {
     .container_A {
         position: relative;
         width: 100%;
+        height: 25vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -2490,18 +2493,18 @@ img {
         justify-content: center;
         flex-direction: row;
         background: #112031;
-        font-size: 0.7em;
+        font-size: 0.9em;
         color: #fff;
-        padding: 2em 0.5em 2em 0.5em;
+        padding: 1em 0.5em 1em 0.5em;
     }
 
     .container_A i {
-        font-size: 1.1em;
-        padding: 0.25em;
+        font-size: 1.2em;
+        padding: 0.3em;
     }
 
     #charly {
-        font-size: 1.1em;
+        font-size: 1.2em;
         color: rgb(9, 214, 241); 
     }
 
@@ -2523,7 +2526,7 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.8em;
+        font-size: 2.1em;
         font-family: American Typewriter;
         cursor: pointer;
         margin: 0.1em;
@@ -2561,11 +2564,12 @@ img {
         }
     }
 
+
     /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
 
     .section2 {
         width: 100vw;
-        height: 66vh;
+        height: 60vh;
         background-color: #112031;
         display: flex;
         flex-wrap: wrap;
@@ -2577,7 +2581,7 @@ img {
 
     .section2_A {
         width: 100vw;
-        height: 33vh;
+        height: 30vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -2586,7 +2590,7 @@ img {
 
     .section2_B {
         width: 100vw;
-        height: 33vh;
+        height: 30vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -2595,20 +2599,20 @@ img {
 
     .titleA {
         position: absolute;
-        top: 20em;
+        top: 23em;
         color: #fff;
         display: block;
-        font-size: 0.6em;
+        font-size: 0.7em;
         margin: 0.5em 0 0.25em 0;
         font-weight: bold;
     }
 
     .titleB {
         position: absolute;
-        top: 52em;
+        top: 47em;
         color: #fff;
         display: block;
-        font-size: 0.6em;
+        font-size: 0.7em;
         margin: 0.5em 0 0.25em 0;
         font-weight: bold;
     }
@@ -2703,7 +2707,7 @@ img {
 
     .section3 {
         width: 100vw;
-        height: 13vh;
+        height: 15vh;
         background-color: #020;
     }
 
@@ -2713,12 +2717,12 @@ img {
         background:#112031;
         text-align: center;
         overflow-x: hidden;
-        height: 13vh;
-        padding: 1em 0;
+        height: 15vh;
+        padding: 2em 1em 1em 1em;
     }
     
     .text-box h2 {
-        font-size: 1em;
+        font-size: 1.3em;
         font-weight: 600;
         font-family: 'Courier New', Courier, monospace;
         color: #fff;
@@ -2743,7 +2747,7 @@ img {
     .text-box span {
         color: rgb(9, 214, 241);
         font-weight: 900;
-        font-size: 1em;
+        font-size: 1.1em;
     }
     
     .text-box h2::after {
@@ -2788,7 +2792,7 @@ img {
 
     .section1 {
         width: 100vw;
-        height: 14vh;
+        height: 25vh;
         background-color: #000;
     }
 
@@ -2797,6 +2801,7 @@ img {
     .container_A {
         position: relative;
         width: 100%;
+        height: 26vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -2804,14 +2809,14 @@ img {
         justify-content: center;
         flex-direction: row;
         background: #112031;
-        font-size: 0.6em;
+        font-size: 0.8em;
         color: #fff;
-        padding: 2em 0.5em 2em 0.5em;
+        padding: 1.5em 0.5em 1.5em 0.5em;
     }
 
     .container_A i {
         font-size: 1.1em;
-        padding: 0.25em;
+        padding: 0.3em;
     }
 
     #charly {
@@ -2837,7 +2842,7 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.6em;
+        font-size: 1.8em;
         font-family: American Typewriter;
         cursor: pointer;
         margin: 0.1em;
@@ -2879,7 +2884,7 @@ img {
 
     .section2 {
         width: 100vw;
-        height: 56vh;
+        height: 60vh;
         background-color: #112031;
         display: flex;
         flex-wrap: wrap;
@@ -2891,7 +2896,7 @@ img {
 
     .section2_A {
         width: 100vw;
-        height: 28vh;
+        height: 30vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -2900,7 +2905,7 @@ img {
 
     .section2_B {
         width: 100vw;
-        height: 28vh;
+        height: 30vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -2909,7 +2914,7 @@ img {
 
     .titleA {
         position: absolute;
-        top: 15em;
+        top: 27em;
         color: #fff;
         display: block;
         font-size: 0.6em;
@@ -2919,7 +2924,7 @@ img {
 
     .titleB {
         position: absolute;
-        top: 41em;
+        top: 55em;
         color: #fff;
         display: block;
         font-size: 0.6em;
@@ -3011,13 +3016,13 @@ img {
         font-size: 12px;
         cursor: pointer;
     }
-    
+
 
     /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
 
     .section3 {
         width: 100vw;
-        height: 10vh;
+        height: 15vh;
         background-color: #020;
     }
 
@@ -3027,10 +3032,10 @@ img {
         background:#112031;
         text-align: center;
         overflow-x: hidden;
-        height: 10vh;
-        padding: 0.5em 0 1em 0;
+        height: 15vh;
+        padding: 2em 1em 1em 1em;
     }
-    
+
     .text-box h2 {
         font-size: 0.9em;
         font-weight: 600;
@@ -3038,7 +3043,7 @@ img {
         color: #fff;
         position: relative;
     }
-    
+
     .text-box h2::before, h2::after {
         content: "";
         position: absolute;
@@ -3046,20 +3051,20 @@ img {
         left: 0;
         height: 100%;
     }
-    
+
     .text-box h2::before {
         background: #112031;
         animation:  type 3s steps(25) 1s forwards infinite;
         width: 100%;
         
     }
-    
+
     .text-box span {
         color: rgb(9, 214, 241);
         font-weight: 900;
         font-size: 0.9em;
     }
-    
+
     .text-box h2::after {
         opacity: 1;
         width: 0.2em; 
@@ -3068,13 +3073,13 @@ img {
         animation:  type 3s steps(25) 1s forwards infinite,
                     blink 0.6s steps(15) infinite;
     }
-    
+
     @keyframes type {
         to {
         left: 110%;
         }
     }
-    
+
     @keyframes blink {
         0% , 50%{
         opacity: 0;
@@ -3097,12 +3102,11 @@ img {
       background-color: rgb(20, 240, 11);
     }
       
-    /* ############## *  **     Barra de Navegación    **  * ################ */
     /* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
 
     .section1 {
         width: 100vw;
-        height: 14vh;
+        height: 25vh;
         background-color: #000;
     }
 
@@ -3111,6 +3115,7 @@ img {
     .container_A {
         position: relative;
         width: 100%;
+        height: 25vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -3120,12 +3125,12 @@ img {
         background: #112031;
         font-size: 0.6em;
         color: #fff;
-        padding: 1em 0 0.9em 0;
+        padding: 1.5em 0.5em 1.5em 0.5em;
     }
 
     .container_A i {
         font-size: 1.1em;
-        padding: 0.25em;
+        padding: 0.3em;
     }
 
     #charly {
@@ -3151,7 +3156,7 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.4em;
+        font-size: 1.5em;
         font-family: American Typewriter;
         cursor: pointer;
         margin: 0.1em;
@@ -3193,7 +3198,7 @@ img {
 
     .section2 {
         width: 100vw;
-        height: 56vh;
+        height: 60vh;
         background-color: #112031;
         display: flex;
         flex-wrap: wrap;
@@ -3205,7 +3210,7 @@ img {
 
     .section2_A {
         width: 100vw;
-        height: 28vh;
+        height: 30vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -3214,7 +3219,7 @@ img {
 
     .section2_B {
         width: 100vw;
-        height: 28vh;
+        height: 30vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -3223,7 +3228,7 @@ img {
 
     .titleA {
         position: absolute;
-        top: 15em;
+        top: 27em;
         color: #fff;
         display: block;
         font-size: 0.6em;
@@ -3233,7 +3238,7 @@ img {
 
     .titleB {
         position: absolute;
-        top: 41em;
+        top: 55em;
         color: #fff;
         display: block;
         font-size: 0.6em;
@@ -3331,7 +3336,7 @@ img {
 
     .section3 {
         width: 100vw;
-        height: 10vh;
+        height: 15vh;
         background-color: #020;
     }
 
@@ -3341,8 +3346,8 @@ img {
         background:#112031;
         text-align: center;
         overflow-x: hidden;
-        height: 10vh;
-        padding: 0.5em 0 1em 0;
+        height: 15vh;
+        padding: 1.5em 0 1em 0;
     }
     
     .text-box h2 {
