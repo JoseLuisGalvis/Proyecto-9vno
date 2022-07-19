@@ -18,6 +18,7 @@
     position: relative;
     display: flex;
     width: 100%;
+    height: 18vh;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -433,13 +434,13 @@ img {
 
     .titleA {
         position: absolute;
-        top: 12em;
+        top: 10em;
         color: #fff;
     }
 
     .titleB {
         position: absolute;
-        top: 12em;
+        top: 10em;
         color: #fff;
     }
 
@@ -739,13 +740,13 @@ img {
 
     .titleA {
         position: absolute;
-        top: 12em;
+        top: 10em;
         color: #fff;
     }
 
     .titleB {
         position: absolute;
-        top: 12em;
+        top: 10em;
         color: #fff;
     }
 
@@ -1044,13 +1045,13 @@ img {
 
     .titleA {
         position: absolute;
-        top: 12em;
+        top: 10em;
         color: #fff;
     }
 
     .titleB {
         position: absolute;
-        top: 12em;
+        top: 10em;
         color: #fff;
     }
 
@@ -1229,313 +1230,6 @@ img {
 
     .section1 {
         width: 100vw;
-        height: 20vh;
-        background-color: #000;
-    }
-
-    /* Efecto Disco */
-
-    .container_A {
-        position: relative;
-        width: 100%;
-        height: 20vh;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        flex-direction: row;
-        background: #112031;
-        font-size: 1.2em;
-        color: #fff;
-        padding: 2em 0.5em;
-    }
-
-    .container_A i {
-        font-size: 1.2em;
-        padding: 0.25em;
-    }
-
-    #charly {
-        font-size: 1em;
-        color: rgb(9, 214, 241); 
-    }
-
-    .container_A span {
-        width: 100%;
-        height: 100%;
-        background: #efefef;
-        position: absolute;
-        z-index: -1;
-        transition: all 0.5s ease;
-    }
-
-    .container_A div {
-        position: relative;
-        width: auto;
-        background: #112031;
-        color: #555;
-        padding: 0.25em 0.5em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2em;
-        font-family: American Typewriter;
-        cursor: pointer;
-        margin: 0.1em;
-        border-radius: 1em;
-        box-shadow: 0em 0em 0.3em rgba(0, 0, 0, 1);
-        transition: all 0.5s ease;
-    }
-
-    input[type='checkbox'] {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 100%;
-        width: 100%;
-        z-index: 100;
-    }
-
-    input[type='checkbox']:checked ~ span {
-        background: #333;
-    }
-
-    input[type='checkbox']:checked ~ div {
-        box-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.5);
-        color: yellow;
-        text-shadow: 0em 0em 1em yellow, 0em 0em 1em yellow;
-        animation: glow 5s linear infinite;
-    }
-
-    @keyframes glow {
-        0% {
-        filter: hue-rotate(0deg);
-        }
-        100% {
-        filter: hue-rotate(360deg);
-        }
-    }
-    
-        /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
-    
-        .section2 {
-            width: 100vw;
-            height: 65vh;
-            background-color: #112031;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            flex-direction: row;
-        }
-    
-        .section2_A {
-            width: 50vw;
-            height: 65vh;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-        }
-    
-        .section2_B {
-            width: 50vw;
-            height: 65vh;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-        }
-    
-        .titleA {
-            position: absolute;
-            top: 14em;
-            color: #fff;
-        }
-    
-        .titleB {
-            position: absolute;
-            top: 14em;
-            color: #fff;
-        }
-    
-        .wrapper {
-            border: 1px solid #ffffff;
-            height: 300px;
-            width: 300px;
-            position: absolute;
-        }
-    
-        .container {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            perspective: 800px;
-            perspective-origin: 50%;
-        }
-    
-        .image-cube {
-            width: 300px;
-            height: 300px;
-            transform-style: preserve-3d;
-            position: relative;
-            transition: 2s;
-        }
-    
-        .image-cube div {
-            height: 300px;
-            width: 300px;
-            position: absolute;
-        }
-    
-        .image-cubeA {
-            width: 300px;
-            height: 300px;
-            transform-style: preserve-3d;
-            position: relative;
-            transition: 2s;
-        }
-    
-        .image-cubeA div {
-            height: 300px;
-            width: 300px;
-            position: absolute;
-        }
-    
-        img {
-            width: 100%;
-            height:100%;
-            transform: translateZ(0);
-        }
-    
-        .front {
-            transform: translateZ(150px);
-        }
-    
-        .right {
-            transform: rotateY(-270deg) translateX(150px);
-            transform-origin: 100% 0;
-        }
-    
-        .back {
-            transform: translateZ(-150px) rotateY(180deg);
-        }
-    
-        .left {
-            transform: rotateY(270deg) translateX(-150px);
-            transform-origin: 0 50%;
-        }
-    
-        .btns {
-            margin-top: 80px;
-            display: flex;
-            justify-content: space-between;
-        }
-    
-        .btns button {
-            background-color: transparent;
-            color: #fff;
-            border: 3px solid #fff;
-            padding: 8px 40px;
-            border-radius: 30px;
-            font-size: 20px;
-            cursor: pointer;
-        }
-        
-    
-        /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
-    
-        .section3 {
-            width: 100vw;
-            height: 15vh;
-            background-color: #020;
-        }
-    
-        /* ** ***** ####################     Text Box Superior    #################### ***** ** */
-    
-        .text-box{
-            background:#112031;
-            text-align: center;
-            overflow-x: hidden;
-            height: 15vh;
-            padding: 1em 2em 0.8em 2em;
-        }
-        
-        .text-box h2 {
-            font-size: 1.6em;
-            font-weight: 600;
-            font-family: 'Courier New', Courier, monospace;
-            color: #fff;
-            position: relative;
-        }
-    
-        .text-box h2::before, h2::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-        }
-    
-        .text-box h2::before {
-            background: #112031;
-            animation:  type 3s steps(25) 1s forwards infinite;
-            width: 100%;
-            
-        }
-    
-        .text-box span {
-            color: rgb(9, 214, 241);
-            font-weight: 900;
-            font-size: 1.3em;
-        }
-        
-        .text-box h2::after {
-            opacity: 1;
-            width: 2px; 
-            background: #fff;
-            color:#fff;
-            animation:  type 3s steps(25) 1s forwards infinite,
-                        blink 0.6s steps(15) infinite;
-        }
-        
-        @keyframes type {
-            to {
-            left: 110%;
-            }
-        }
-        
-        @keyframes blink {
-            0% , 50%{
-            opacity: 0;
-            } 
-            51%, 100% {
-            opacity: 1;
-            }
-        }
-                    
-}
-
-
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-/* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############              Escritorio 1000            ############## ***** ** */
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-
-@media all and (max-width: 1000px) {
-
-    body {
-        background-color: rgb(90, 310, 19);
-    }
-
-    /* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
-
-    .section1 {
-        width: 100vw;
         height: 25vh;
         background-color: #000;
     }
@@ -1553,9 +1247,9 @@ img {
         justify-content: center;
         flex-direction: row;
         background: #112031;
-        font-size: 1.2em;
+        font-size: 1.1em;
         color: #fff;
-        padding: 2em 0.5em;
+        padding: 1em 0.5em;
     }
 
     .container_A i {
@@ -1658,13 +1352,628 @@ img {
 
     .titleA {
         position: absolute;
-        top: 16em;
+        top: 14em;
         color: #fff;
     }
 
     .titleB {
         position: absolute;
-        top: 16em;
+        top: 14em;
+        color: #fff;
+    }
+
+    .wrapper {
+        border: 1px solid #ffffff;
+        height: 300px;
+        width: 300px;
+        position: absolute;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 800px;
+        perspective-origin: 50%;
+    }
+
+    .image-cube {
+        width: 300px;
+        height: 300px;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: 2s;
+    }
+
+    .image-cube div {
+        height: 300px;
+        width: 300px;
+        position: absolute;
+    }
+
+    .image-cubeA {
+        width: 300px;
+        height: 300px;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: 2s;
+    }
+
+    .image-cubeA div {
+        height: 300px;
+        width: 300px;
+        position: absolute;
+    }
+
+    img {
+        width: 100%;
+        height:100%;
+        transform: translateZ(0);
+    }
+
+    .front {
+        transform: translateZ(150px);
+    }
+
+    .right {
+        transform: rotateY(-270deg) translateX(150px);
+        transform-origin: 100% 0;
+    }
+
+    .back {
+        transform: translateZ(-150px) rotateY(180deg);
+    }
+
+    .left {
+        transform: rotateY(270deg) translateX(-150px);
+        transform-origin: 0 50%;
+    }
+
+    .btns {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btns button {
+        background-color: transparent;
+        color: #fff;
+        border: 3px solid #fff;
+        padding: 8px 40px;
+        border-radius: 30px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+
+    /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
+
+    .section3 {
+        width: 100vw;
+        height: 15vh;
+        background-color: #020;
+    }
+
+    /* ** ***** ####################     Text Box Superior    #################### ***** ** */
+
+    .text-box{
+        background:#112031;
+        text-align: center;
+        overflow-x: hidden;
+        height: 15vh;
+        padding: 2em 1.5em 1em 1.5em ;
+    }
+
+    .text-box h2 {
+        font-size: 1.6em;
+        font-weight: 600;
+        font-family: 'Courier New', Courier, monospace;
+        color: #fff;
+        position: relative;
+    }
+
+    .text-box h2::before, h2::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    .text-box h2::before {
+        background: #112031;
+        animation:  type 3s steps(25) 1s forwards infinite;
+        width: 100%;
+        
+    }
+
+    .text-box span {
+        color: rgb(9, 214, 241);
+        font-weight: 900;
+        font-size: 1.1em;
+    }
+
+    .text-box h2::after {
+        opacity: 1;
+        width: 0.2em; 
+        background: #fff;
+        color:#fff;
+        animation:  type 3s steps(25) 1s forwards infinite,
+                    blink 0.6s steps(15) infinite;
+    }
+
+    @keyframes type {
+        to {
+        left: 110%;
+        }
+    }
+
+    @keyframes blink {
+        0% , 50%{
+        opacity: 0;
+        } 
+        51%, 100% {
+        opacity: 1;
+        }
+    }
+                    
+}
+
+
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+/* ** ***** ##############          Código      Responsive         ############## ***** ** */
+/* ** ***** ##############              Escritorio 1000            ############## ***** ** */
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+
+@media all and (max-width: 1000px) {
+
+    body {
+        background-color: rgb(90, 310, 19);
+    }
+
+    /* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
+
+    .section1 {
+        width: 100vw;
+        height: 25vh;
+        background-color: #000;
+    }
+
+    /* Efecto Disco */
+
+    .container_A {
+        position: relative;
+        width: 100%;
+        height: 25vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+        background: #112031;
+        font-size: 1.1em;
+        color: #fff;
+        padding: 1em 0.5em;
+    }
+
+    .container_A i {
+        font-size: 1.2em;
+        padding: 0.25em;
+    }
+
+    #charly {
+        font-size: 1em;
+        color: rgb(9, 214, 241); 
+    }
+
+    .container_A span {
+        width: 100%;
+        height: 100%;
+        background: #efefef;
+        position: absolute;
+        z-index: -1;
+        transition: all 0.5s ease;
+    }
+
+    .container_A div {
+        position: relative;
+        width: auto;
+        background: #112031;
+        color: #555;
+        padding: 0.25em 0.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        font-family: American Typewriter;
+        cursor: pointer;
+        margin: 0.1em;
+        border-radius: 1em;
+        box-shadow: 0em 0em 0.3em rgba(0, 0, 0, 1);
+        transition: all 0.5s ease;
+    }
+
+    input[type='checkbox'] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+    }
+
+    input[type='checkbox']:checked ~ span {
+        background: #333;
+    }
+
+    input[type='checkbox']:checked ~ div {
+        box-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.5);
+        color: yellow;
+        text-shadow: 0em 0em 1em yellow, 0em 0em 1em yellow;
+        animation: glow 5s linear infinite;
+    }
+
+    @keyframes glow {
+        0% {
+        filter: hue-rotate(0deg);
+        }
+        100% {
+        filter: hue-rotate(360deg);
+        }
+    }
+
+    /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
+    
+    .section2 {
+        width: 100vw;
+        height: 60vh;
+        background-color: #112031;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .section2_A {
+        width: 50vw;
+        height: 60vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section2_B {
+        width: 50vw;
+        height: 60vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titleA {
+        position: absolute;
+        top: 14em;
+        color: #fff;
+    }
+
+    .titleB {
+        position: absolute;
+        top: 14em;
+        color: #fff;
+    }
+
+    .wrapper {
+        border: 1px solid #ffffff;
+        height: 300px;
+        width: 300px;
+        position: absolute;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 800px;
+        perspective-origin: 50%;
+    }
+
+    .image-cube {
+        width: 300px;
+        height: 300px;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: 2s;
+    }
+
+    .image-cube div {
+        height: 300px;
+        width: 300px;
+        position: absolute;
+    }
+
+    .image-cubeA {
+        width: 300px;
+        height: 300px;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: 2s;
+    }
+
+    .image-cubeA div {
+        height: 300px;
+        width: 300px;
+        position: absolute;
+    }
+
+    img {
+        width: 100%;
+        height:100%;
+        transform: translateZ(0);
+    }
+
+    .front {
+        transform: translateZ(150px);
+    }
+
+    .right {
+        transform: rotateY(-270deg) translateX(150px);
+        transform-origin: 100% 0;
+    }
+
+    .back {
+        transform: translateZ(-150px) rotateY(180deg);
+    }
+
+    .left {
+        transform: rotateY(270deg) translateX(-150px);
+        transform-origin: 0 50%;
+    }
+
+    .btns {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btns button {
+        background-color: transparent;
+        color: #fff;
+        border: 3px solid #fff;
+        padding: 8px 40px;
+        border-radius: 30px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+
+    /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
+
+    .section3 {
+        width: 100vw;
+        height: 15vh;
+        background-color: #020;
+    }
+
+    /* ** ***** ####################     Text Box Superior    #################### ***** ** */
+
+    .text-box{
+        background:#112031;
+        text-align: center;
+        overflow-x: hidden;
+        height: 15vh;
+        padding: 2em 1.5em 1em 1.5em ;
+    }
+
+    .text-box h2 {
+        font-size: 1.6em;
+        font-weight: 600;
+        font-family: 'Courier New', Courier, monospace;
+        color: #fff;
+        position: relative;
+    }
+
+    .text-box h2::before, h2::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    .text-box h2::before {
+        background: #112031;
+        animation:  type 3s steps(25) 1s forwards infinite;
+        width: 100%;
+        
+    }
+
+    .text-box span {
+        color: rgb(9, 214, 241);
+        font-weight: 900;
+        font-size: 1.1em;
+    }
+
+    .text-box h2::after {
+        opacity: 1;
+        width: 0.2em; 
+        background: #fff;
+        color:#fff;
+        animation:  type 3s steps(25) 1s forwards infinite,
+                    blink 0.6s steps(15) infinite;
+    }
+
+    @keyframes type {
+        to {
+        left: 110%;
+        }
+    }
+
+    @keyframes blink {
+        0% , 50%{
+        opacity: 0;
+        } 
+        51%, 100% {
+        opacity: 1;
+        }
+    }
+
+}
+
+
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+/* ** ***** ##############          Código      Responsive         ############## ***** ** */
+/* ** ***** ##############              Escritorio 800            ############## ***** ** */
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+
+@media all and (max-width: 800px) {
+
+    body {
+        background-color: rgb(70, 290, 17);
+    }
+
+    /* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
+
+    .section1 {
+        width: 100vw;
+        height: 20vh;
+        background-color: #000;
+    }
+
+    /* Efecto Disco */
+
+    .container_A {
+        position: relative;
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+        background: #112031;
+        font-size: 1em;
+        color: #fff;
+        padding: 1.5em 0.5em 1.5em 0.5em;
+    }
+
+    .container_A i {
+        font-size: 1.1em;
+        padding: 0.3em;
+    }
+
+    #charly {
+        font-size: 1.1em;
+        color: rgb(9, 214, 241); 
+    }
+
+    .container_A span {
+        width: 100%;
+        height: 100%;
+        background: #efefef;
+        position: absolute;
+        z-index: -1;
+        transition: all 0.5s ease;
+    }
+
+    .container_A div {
+        position: relative;
+        width: auto;
+        background: #112031;
+        color: #555;
+        padding: 0.25em 0.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        font-family: American Typewriter;
+        cursor: pointer;
+        margin: 0.1em;
+        border-radius: 1em;
+        box-shadow: 0em 0em 0.3em rgba(0, 0, 0, 1);
+        transition: all 0.5s ease;
+    }
+
+    input[type='checkbox'] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+    }
+
+    input[type='checkbox']:checked ~ span {
+        background: #333;
+    }
+
+    input[type='checkbox']:checked ~ div {
+        box-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.5);
+        color: yellow;
+        text-shadow: 0em 0em 1em yellow, 0em 0em 1em yellow;
+        animation: glow 5s linear infinite;
+    }
+
+    @keyframes glow {
+        0% {
+        filter: hue-rotate(0deg);
+        }
+        100% {
+        filter: hue-rotate(360deg);
+        }
+    }
+
+
+    /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
+
+    .section2 {
+        width: 100vw;
+        height: 65vh;
+        background-color: #112031;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .section2_A {
+        width: 50vw;
+        height: 65vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section2_B {
+        width: 50vw;
+        height: 65vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titleA {
+        position: absolute;
+        top: 12em;
+        color: #fff;
+    }
+
+    .titleB {
+        position: absolute;
+        top: 12em;
         color: #fff;
     }
 
@@ -1752,7 +2061,8 @@ img {
         font-size: 20px;
         cursor: pointer;
     }
-
+  
+    
 
     /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
 
@@ -1769,17 +2079,17 @@ img {
         text-align: center;
         overflow-x: hidden;
         height: 15vh;
-        padding: 2em;
+        padding: 2em 1em 1em 1em;
     }
-
+    
     .text-box h2 {
-        font-size: 1.7em;
+        font-size: 1.2em;
         font-weight: 600;
         font-family: 'Courier New', Courier, monospace;
         color: #fff;
         position: relative;
     }
-
+    
     .text-box h2::before, h2::after {
         content: "";
         position: absolute;
@@ -1787,20 +2097,20 @@ img {
         left: 0;
         height: 100%;
     }
-
+    
     .text-box h2::before {
         background: #112031;
         animation:  type 3s steps(25) 1s forwards infinite;
         width: 100%;
         
     }
-
+    
     .text-box span {
         color: rgb(9, 214, 241);
         font-weight: 900;
         font-size: 1.2em;
     }
-
+    
     .text-box h2::after {
         opacity: 1;
         width: 0.2em; 
@@ -1809,13 +2119,13 @@ img {
         animation:  type 3s steps(25) 1s forwards infinite,
                     blink 0.6s steps(15) infinite;
     }
-
+    
     @keyframes type {
         to {
         left: 110%;
         }
     }
-
+    
     @keyframes blink {
         0% , 50%{
         opacity: 0;
@@ -1827,23 +2137,22 @@ img {
 
 }
 
-
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 /* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############              Escritorio 800            ############## ***** ** */
+/* ** ***** ##############              Escritorio 599           ############## ***** ** */
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 599px) {
 
     body {
-        background-color: rgb(70, 290, 17);
+        background-color: rgb(60, 280, 16);
     }
 
     /* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
 
     .section1 {
         width: 100vw;
-        height: 25vh;
+        height: 12vh;
         background-color: #000;
     }
 
@@ -1852,7 +2161,7 @@ img {
     .container_A {
         position: relative;
         width: 100%;
-        height: 26vh;
+        height: 12vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -1860,14 +2169,14 @@ img {
         justify-content: center;
         flex-direction: row;
         background: #112031;
-        font-size: 1em;
+        font-size: 0.6em;
         color: #fff;
-        padding: 1.5em 0.5em 1.5em 0.5em;
+        padding: 0.3em;
     }
 
     .container_A i {
-        font-size: 1.1em;
-        padding: 0.3em;
+        font-size: 1.2em;
+        padding: 0.2em;
     }
 
     #charly {
@@ -1889,11 +2198,11 @@ img {
         width: auto;
         background: #112031;
         color: #555;
-        padding: 0.25em 0.5em;
+        padding: 0.1em 0.5em;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2.3em;
+        font-size: 2em;
         font-family: American Typewriter;
         cursor: pointer;
         margin: 0.1em;
@@ -1931,327 +2240,11 @@ img {
         }
     }
 
-
     /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
 
     .section2 {
         width: 100vw;
-        height: 60vh;
-        background-color: #112031;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    .section2_A {
-        width: 50vw;
-        height: 60vh;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .section2_B {
-        width: 50vw;
-        height: 60vh;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .titleA {
-        position: absolute;
-        top: 30em;
-        color: #fff;
-        display: block;
-        font-size: 0.8em;
-        margin: 0.5em 0 0.25em 0;
-        font-weight: bold;
-    }
-
-    .titleB {
-        position: absolute;
-        top: 30em;
-        color: #fff;
-        display: block;
-        font-size: 0.8em;
-        margin: 0.5em 0 0.25em 0;
-        font-weight: bold;
-    }
-
-    .wrapper {
-        border: 1px solid #ffffff;
-        height: 6em;
-        width: 6em;
-        position: absolute;
-    }
-
-    .container {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        perspective: 600px;
-        perspective-origin: 50%;
-    }
-
-    .image-cube {
-        height: 7em;
-        width: 7em;
-        transform-style: preserve-3d;
-        position: relative;
-        transition: 2s;
-    }
-
-    .image-cube div {
-        height: 7em;
-        width: 7em;
-        position: absolute;
-    }
-
-    .image-cubeA {
-        height: 7em;
-        width: 7em;
-        transform-style: preserve-3d;
-        position: relative;
-        transition: 2s;
-    }
-
-    .image-cubeA div {
-        height: 7em;
-        width: 7em;
-        position: absolute;
-    }
-
-    img {
-        width: 100%;
-        height:100%;
-        transform: translateZ(0);
-    }
-
-    .front {
-        transform: translateZ(3.5em);
-    }
-
-    .right {
-        transform: rotateY(-270deg) translateX(3.5em);
-        transform-origin: 100% 0;
-    }
-
-    .back {
-        transform: translateZ(-3.5em) rotateY(180deg);
-    }
-
-    .left {
-        transform: rotateY(270deg) translateX(-3.5em);
-        transform-origin: 0 50%;
-    }
-
-    .btns {
-        margin-top: 1.5em;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .btns button {
-        background-color: transparent;
-        color: #fff;
-        border: 3px solid #fff;
-        padding: 0.25em 1.5em;
-        border-radius: 30px;
-        font-size: 12px;
-        cursor: pointer;
-    }
-    
-
-    /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
-
-    .section3 {
-        width: 100vw;
-        height: 15vh;
-        background-color: #020;
-    }
-
-    /* ** ***** ####################     Text Box Superior    #################### ***** ** */
-
-    .text-box{
-        background:#112031;
-        text-align: center;
-        overflow-x: hidden;
-        height: 15vh;
-        padding: 2em 1em 1em 1em;
-    }
-    
-    .text-box h2 {
-        font-size: 1.4em;
-        font-weight: 600;
-        font-family: 'Courier New', Courier, monospace;
-        color: #fff;
-        position: relative;
-    }
-    
-    .text-box h2::before, h2::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-    }
-    
-    .text-box h2::before {
-        background: #112031;
-        animation:  type 3s steps(25) 1s forwards infinite;
-        width: 100%;
-        
-    }
-    
-    .text-box span {
-        color: rgb(9, 214, 241);
-        font-weight: 900;
-        font-size: 1.3em;
-    }
-    
-    .text-box h2::after {
-        opacity: 1;
-        width: 0.2em; 
-        background: #fff;
-        color:#fff;
-        animation:  type 3s steps(25) 1s forwards infinite,
-                    blink 0.6s steps(15) infinite;
-    }
-    
-    @keyframes type {
-        to {
-        left: 110%;
-        }
-    }
-    
-    @keyframes blink {
-        0% , 50%{
-        opacity: 0;
-        } 
-        51%, 100% {
-        opacity: 1;
-        }
-    }
-
-}
-
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-/* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############              Escritorio 600            ############## ***** ** */
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-
-@media all and (max-width: 600px) {
-
-    body {
-        background-color: rgb(60, 280, 16);
-    }
-
-/* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
-
-.section1 {
-    width: 100vw;
-    height: 25vh;
-    background-color: #000;
-}
-
-/* Efecto Disco */
-
-.container_A {
-    position: relative;
-    width: 100%;
-    height: 26vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    flex-direction: row;
-    background: #112031;
-    font-size: 1em;
-    color: #fff;
-    padding: 1.5em 0.5em 1.5em 0.5em;
-}
-
-.container_A i {
-    font-size: 1.1em;
-    padding: 0.3em;
-}
-
-#charly {
-    font-size: 1.1em;
-    color: rgb(9, 214, 241); 
-}
-
-.container_A span {
-    width: 100%;
-    height: 100%;
-    background: #efefef;
-    position: absolute;
-    z-index: -1;
-    transition: all 0.5s ease;
-}
-
-.container_A div {
-    position: relative;
-    width: auto;
-    background: #112031;
-    color: #555;
-    padding: 0.25em 0.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    font-family: American Typewriter;
-    cursor: pointer;
-    margin: 0.1em;
-    border-radius: 1em;
-    box-shadow: 0em 0em 0.3em rgba(0, 0, 0, 1);
-    transition: all 0.5s ease;
-}
-
-input[type='checkbox'] {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 100%;
-    width: 100%;
-    z-index: 100;
-}
-
-input[type='checkbox']:checked ~ span {
-    background: #333;
-}
-
-input[type='checkbox']:checked ~ div {
-    box-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.5);
-    color: yellow;
-    text-shadow: 0em 0em 1em yellow, 0em 0em 1em yellow;
-    animation: glow 5s linear infinite;
-}
-
-@keyframes glow {
-    0% {
-    filter: hue-rotate(0deg);
-    }
-    100% {
-    filter: hue-rotate(360deg);
-    }
-}
-
-
-    /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
-
-    .section2 {
-        width: 100vw;
-        height: 60vh;
+        height: 74vh;
         background-color: #112031;
         display: flex;
         flex-wrap: wrap;
@@ -2263,7 +2256,7 @@ input[type='checkbox']:checked ~ div {
 
     .section2_A {
         width: 100vw;
-        height: 30vh;
+        height: 39vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -2272,7 +2265,7 @@ input[type='checkbox']:checked ~ div {
 
     .section2_B {
         width: 100vw;
-        height: 30vh;
+        height: 35vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -2281,7 +2274,7 @@ input[type='checkbox']:checked ~ div {
 
     .titleA {
         position: absolute;
-        top: 27em;
+        top: 18em;
         color: #fff;
         display: block;
         font-size: 0.6em;
@@ -2291,7 +2284,7 @@ input[type='checkbox']:checked ~ div {
 
     .titleB {
         position: absolute;
-        top: 55em;
+        top: 50em;
         color: #fff;
         display: block;
         font-size: 0.6em;
@@ -2383,13 +2376,13 @@ input[type='checkbox']:checked ~ div {
         font-size: 12px;
         cursor: pointer;
     }
-    
+
 
     /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
 
     .section3 {
         width: 100vw;
-        height: 15vh;
+        height: 10vh;
         background-color: #020;
     }
 
@@ -2399,18 +2392,18 @@ input[type='checkbox']:checked ~ div {
         background:#112031;
         text-align: center;
         overflow-x: hidden;
-        height: 15vh;
-        padding: 2em 1em 1em 1em;
+        height: 10vh;
+        padding: 0.5em 1em;
     }
-    
+
     .text-box h2 {
-        font-size: 1.3em;
+        font-size: 1em;
         font-weight: 600;
         font-family: 'Courier New', Courier, monospace;
         color: #fff;
         position: relative;
     }
-    
+
     .text-box h2::before, h2::after {
         content: "";
         position: absolute;
@@ -2418,20 +2411,20 @@ input[type='checkbox']:checked ~ div {
         left: 0;
         height: 100%;
     }
-    
+
     .text-box h2::before {
         background: #112031;
         animation:  type 3s steps(25) 1s forwards infinite;
         width: 100%;
         
     }
-    
+
     .text-box span {
         color: rgb(9, 214, 241);
         font-weight: 900;
-        font-size: 1.2em;
+        font-size: 1em;
     }
-    
+
     .text-box h2::after {
         opacity: 1;
         width: 0.2em; 
@@ -2440,13 +2433,13 @@ input[type='checkbox']:checked ~ div {
         animation:  type 3s steps(25) 1s forwards infinite,
                     blink 0.6s steps(15) infinite;
     }
-    
+
     @keyframes type {
         to {
         left: 110%;
         }
     }
-    
+
     @keyframes blink {
         0% , 50%{
         opacity: 0;
@@ -2465,7 +2458,7 @@ input[type='checkbox']:checked ~ div {
 /* ** ***** ##############              Escritorio 500            ############## ***** ** */
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 560px) {
 
     body {
         background-color: rgb(30, 250, 12);
@@ -2476,7 +2469,7 @@ input[type='checkbox']:checked ~ div {
 
     .section1 {
         width: 100vw;
-        height: 20vh;
+        height: 16vh;
         background-color: #000;
     }
 
@@ -2485,7 +2478,7 @@ input[type='checkbox']:checked ~ div {
     .container_A {
         position: relative;
         width: 100%;
-        height: 20vh;
+        height: 16vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -2493,14 +2486,14 @@ input[type='checkbox']:checked ~ div {
         justify-content: center;
         flex-direction: row;
         background: #112031;
-        font-size: 0.8em;
+        font-size: 0.6em;
         color: #fff;
-        padding: 1.5em 0.5em 1.5em 0.5em;
+        padding: 0.3em;
     }
 
     .container_A i {
         font-size: 1.1em;
-        padding: 0.3em;
+        padding: 0.2em;
     }
 
     #charly {
@@ -2522,11 +2515,11 @@ input[type='checkbox']:checked ~ div {
         width: auto;
         background: #112031;
         color: #555;
-        padding: 0.25em 0.5em;
+        padding: 0.1em 0.5em;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.8em;
+        font-size: 2em;
         font-family: American Typewriter;
         cursor: pointer;
         margin: 0.1em;
@@ -2568,7 +2561,7 @@ input[type='checkbox']:checked ~ div {
 
     .section2 {
         width: 100vw;
-        height: 65vh;
+        height: 74vh;
         background-color: #112031;
         display: flex;
         flex-wrap: wrap;
@@ -2580,7 +2573,7 @@ input[type='checkbox']:checked ~ div {
 
     .section2_A {
         width: 100vw;
-        height: 35vh;
+        height: 39vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -2589,7 +2582,7 @@ input[type='checkbox']:checked ~ div {
 
     .section2_B {
         width: 100vw;
-        height: 30vh;
+        height: 35vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -2598,7 +2591,7 @@ input[type='checkbox']:checked ~ div {
 
     .titleA {
         position: absolute;
-        top: 24em;
+        top: 11em;
         color: #fff;
         display: block;
         font-size: 0.6em;
@@ -2608,7 +2601,7 @@ input[type='checkbox']:checked ~ div {
 
     .titleB {
         position: absolute;
-        top: 55em;
+        top: 32.5em;
         color: #fff;
         display: block;
         font-size: 0.6em;
@@ -2706,7 +2699,7 @@ input[type='checkbox']:checked ~ div {
 
     .section3 {
         width: 100vw;
-        height: 15vh;
+        height: 10vh;
         background-color: #020;
     }
 
@@ -2716,8 +2709,8 @@ input[type='checkbox']:checked ~ div {
         background:#112031;
         text-align: center;
         overflow-x: hidden;
-        height: 15vh;
-        padding: 2em 1em 1em 1em;
+        height: 10vh;
+        padding: 0.5em 1em;
     }
 
     .text-box h2 {
@@ -2791,7 +2784,7 @@ input[type='checkbox']:checked ~ div {
 
     .section1 {
         width: 100vw;
-        height: 25vh;
+        height: 15vh;
         background-color: #000;
     }
 
@@ -2800,7 +2793,7 @@ input[type='checkbox']:checked ~ div {
     .container_A {
         position: relative;
         width: 100%;
-        height: 26vh;
+        height: 15vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -2808,14 +2801,14 @@ input[type='checkbox']:checked ~ div {
         justify-content: center;
         flex-direction: row;
         background: #112031;
-        font-size: 0.8em;
+        font-size: 0.6em;
         color: #fff;
-        padding: 1.5em 0.5em 1.5em 0.5em;
+        padding: 0.3em;
     }
 
     .container_A i {
         font-size: 1.1em;
-        padding: 0.3em;
+        padding: 0.2em;
     }
 
     #charly {
@@ -2837,321 +2830,7 @@ input[type='checkbox']:checked ~ div {
         width: auto;
         background: #112031;
         color: #555;
-        padding: 0.25em 0.5em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.8em;
-        font-family: American Typewriter;
-        cursor: pointer;
-        margin: 0.1em;
-        border-radius: 1em;
-        box-shadow: 0em 0em 0.3em rgba(0, 0, 0, 1);
-        transition: all 0.5s ease;
-    }
-
-    input[type='checkbox'] {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 100%;
-        width: 100%;
-        z-index: 100;
-    }
-
-    input[type='checkbox']:checked ~ span {
-        background: #333;
-    }
-
-    input[type='checkbox']:checked ~ div {
-        box-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.5);
-        color: yellow;
-        text-shadow: 0em 0em 1em yellow, 0em 0em 1em yellow;
-        animation: glow 5s linear infinite;
-    }
-
-    @keyframes glow {
-        0% {
-        filter: hue-rotate(0deg);
-        }
-        100% {
-        filter: hue-rotate(360deg);
-        }
-    }
-
-    /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
-
-    .section2 {
-        width: 100vw;
-        height: 60vh;
-        background-color: #112031;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    .section2_A {
-        width: 100vw;
-        height: 30vh;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .section2_B {
-        width: 100vw;
-        height: 30vh;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .titleA {
-        position: absolute;
-        top: 27em;
-        color: #fff;
-        display: block;
-        font-size: 0.6em;
-        margin: 0.5em 0 0.25em 0;
-        font-weight: bold;
-    }
-
-    .titleB {
-        position: absolute;
-        top: 55em;
-        color: #fff;
-        display: block;
-        font-size: 0.6em;
-        margin: 0.5em 0 0.25em 0;
-        font-weight: bold;
-    }
-
-    .wrapper {
-        border: 1px solid #ffffff;
-        height: 6em;
-        width: 6em;
-        position: absolute;
-    }
-
-    .container {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        perspective: 600px;
-        perspective-origin: 50%;
-    }
-
-    .image-cube {
-        height: 7em;
-        width: 7em;
-        transform-style: preserve-3d;
-        position: relative;
-        transition: 2s;
-    }
-
-    .image-cube div {
-        height: 7em;
-        width: 7em;
-        position: absolute;
-    }
-
-    .image-cubeA {
-        height: 7em;
-        width: 7em;
-        transform-style: preserve-3d;
-        position: relative;
-        transition: 2s;
-    }
-
-    .image-cubeA div {
-        height: 7em;
-        width: 7em;
-        position: absolute;
-    }
-
-    img {
-        width: 100%;
-        height:100%;
-        transform: translateZ(0);
-    }
-
-    .front {
-        transform: translateZ(3.5em);
-    }
-
-    .right {
-        transform: rotateY(-270deg) translateX(3.5em);
-        transform-origin: 100% 0;
-    }
-
-    .back {
-        transform: translateZ(-3.5em) rotateY(180deg);
-    }
-
-    .left {
-        transform: rotateY(270deg) translateX(-3.5em);
-        transform-origin: 0 50%;
-    }
-
-    .btns {
-        margin-top: 1.5em;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .btns button {
-        background-color: transparent;
-        color: #fff;
-        border: 3px solid #fff;
-        padding: 0.25em 1.5em;
-        border-radius: 30px;
-        font-size: 12px;
-        cursor: pointer;
-    }
-
-
-    /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
-
-    .section3 {
-        width: 100vw;
-        height: 15vh;
-        background-color: #020;
-    }
-
-    /* ** ***** ####################     Text Box Superior    #################### ***** ** */
-
-    .text-box{
-        background:#112031;
-        text-align: center;
-        overflow-x: hidden;
-        height: 15vh;
-        padding: 2em 1em 1em 1em;
-    }
-
-    .text-box h2 {
-        font-size: 0.9em;
-        font-weight: 600;
-        font-family: 'Courier New', Courier, monospace;
-        color: #fff;
-        position: relative;
-    }
-
-    .text-box h2::before, h2::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-    }
-
-    .text-box h2::before {
-        background: #112031;
-        animation:  type 3s steps(25) 1s forwards infinite;
-        width: 100%;
-        
-    }
-
-    .text-box span {
-        color: rgb(9, 214, 241);
-        font-weight: 900;
-        font-size: 0.9em;
-    }
-
-    .text-box h2::after {
-        opacity: 1;
-        width: 0.2em; 
-        background: #fff;
-        color:#fff;
-        animation:  type 3s steps(25) 1s forwards infinite,
-                    blink 0.6s steps(15) infinite;
-    }
-
-    @keyframes type {
-        to {
-        left: 110%;
-        }
-    }
-
-    @keyframes blink {
-        0% , 50%{
-        opacity: 0;
-        } 
-        51%, 100% {
-        opacity: 1;
-        }
-    }
-   
-}
-
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-/* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############              Escritorio 200            ############## ***** ** */
-/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
-
-@media all and (max-width: 200px) {
-
-    body {
-      background-color: rgb(20, 240, 11);
-    }
-      
-    /* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
-
-    .section1 {
-        width: 100vw;
-        height: 25vh;
-        background-color: #000;
-    }
-
-    /* Efecto Disco */
-
-    .container_A {
-        position: relative;
-        width: 100%;
-        height: 25vh;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        flex-direction: row;
-        background: #112031;
-        font-size: 0.6em;
-        color: #fff;
-        padding: 1.5em 0.5em 1.5em 0.5em;
-    }
-
-    .container_A i {
-        font-size: 1.1em;
-        padding: 0.3em;
-    }
-
-    #charly {
-        font-size: 1.1em;
-        color: rgb(9, 214, 241); 
-    }
-
-    .container_A span {
-        width: 100%;
-        height: 100%;
-        background: #efefef;
-        position: absolute;
-        z-index: -1;
-        transition: all 0.5s ease;
-    }
-
-    .container_A div {
-        position: relative;
-        width: auto;
-        background: #112031;
-        color: #555;
-        padding: 0.25em 0.5em;
+        padding: 0.1em 0.5em;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -3197,7 +2876,7 @@ input[type='checkbox']:checked ~ div {
 
     .section2 {
         width: 100vw;
-        height: 60vh;
+        height: 75vh;
         background-color: #112031;
         display: flex;
         flex-wrap: wrap;
@@ -3209,7 +2888,7 @@ input[type='checkbox']:checked ~ div {
 
     .section2_A {
         width: 100vw;
-        height: 30vh;
+        height: 40vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -3218,7 +2897,7 @@ input[type='checkbox']:checked ~ div {
 
     .section2_B {
         width: 100vw;
-        height: 30vh;
+        height: 35vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -3227,7 +2906,7 @@ input[type='checkbox']:checked ~ div {
 
     .titleA {
         position: absolute;
-        top: 27em;
+        top: 11em;
         color: #fff;
         display: block;
         font-size: 0.6em;
@@ -3237,7 +2916,7 @@ input[type='checkbox']:checked ~ div {
 
     .titleB {
         position: absolute;
-        top: 55em;
+        top: 32.5em;
         color: #fff;
         display: block;
         font-size: 0.6em;
@@ -3329,13 +3008,13 @@ input[type='checkbox']:checked ~ div {
         font-size: 12px;
         cursor: pointer;
     }
-    
+
 
     /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
 
     .section3 {
         width: 100vw;
-        height: 15vh;
+        height: 10vh;
         background-color: #020;
     }
 
@@ -3345,18 +3024,18 @@ input[type='checkbox']:checked ~ div {
         background:#112031;
         text-align: center;
         overflow-x: hidden;
-        height: 15vh;
-        padding: 1.5em 0 1em 0;
+        height: 10vh;
+        padding: 0.5em 1em 0.3 1em;
     }
-    
+
     .text-box h2 {
-        font-size: 0.9em;
+        font-size: 0.8em;
         font-weight: 600;
         font-family: 'Courier New', Courier, monospace;
         color: #fff;
         position: relative;
     }
-    
+
     .text-box h2::before, h2::after {
         content: "";
         position: absolute;
@@ -3364,20 +3043,20 @@ input[type='checkbox']:checked ~ div {
         left: 0;
         height: 100%;
     }
-    
+
     .text-box h2::before {
         background: #112031;
         animation:  type 3s steps(25) 1s forwards infinite;
         width: 100%;
         
     }
-    
+
     .text-box span {
         color: rgb(9, 214, 241);
         font-weight: 900;
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
-    
+
     .text-box h2::after {
         opacity: 1;
         width: 0.2em; 
@@ -3386,13 +3065,327 @@ input[type='checkbox']:checked ~ div {
         animation:  type 3s steps(25) 1s forwards infinite,
                     blink 0.6s steps(15) infinite;
     }
-    
+
     @keyframes type {
         to {
         left: 110%;
         }
     }
-    
+
+    @keyframes blink {
+        0% , 50%{
+        opacity: 0;
+        } 
+        51%, 100% {
+        opacity: 1;
+        }
+    }
+   
+}
+
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+/* ** ***** ##############          Código      Responsive         ############## ***** ** */
+/* ** ***** ##############              Escritorio 200            ############## ***** ** */
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+
+@media all and (max-width: 200px) {
+
+    body {
+      background-color: rgb(20, 240, 11);
+    }
+      
+    /* ** ***** ####################     Inicio Sección 1    #################### ***** ** */
+
+    .section1 {
+        width: 100vw;
+        height: 20vh;
+        background-color: #000;
+    }
+
+    /* Efecto Disco */
+
+    .container_A {
+        position: relative;
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+        background: #112031;
+        font-size: 0.6em;
+        color: #fff;
+        padding: 0.3em;
+    }
+
+    .container_A i {
+        font-size: 1.1em;
+        padding: 0.2em;
+    }
+
+    #charly {
+        font-size: 1.1em;
+        color: rgb(9, 214, 241); 
+    }
+
+    .container_A span {
+        width: 100%;
+        height: 100%;
+        background: #efefef;
+        position: absolute;
+        z-index: -1;
+        transition: all 0.5s ease;
+    }
+
+    .container_A div {
+        position: relative;
+        width: auto;
+        background: #112031;
+        color: #555;
+        padding: 0.1em 0.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        font-family: American Typewriter;
+        cursor: pointer;
+        margin: 0.1em;
+        border-radius: 1em;
+        box-shadow: 0em 0em 0.3em rgba(0, 0, 0, 1);
+        transition: all 0.5s ease;
+    }
+
+    input[type='checkbox'] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+    }
+
+    input[type='checkbox']:checked ~ span {
+        background: #333;
+    }
+
+    input[type='checkbox']:checked ~ div {
+        box-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.5);
+        color: yellow;
+        text-shadow: 0em 0em 1em yellow, 0em 0em 1em yellow;
+        animation: glow 5s linear infinite;
+    }
+
+    @keyframes glow {
+        0% {
+        filter: hue-rotate(0deg);
+        }
+        100% {
+        filter: hue-rotate(360deg);
+        }
+    }
+
+    /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
+
+    .section2 {
+        width: 100vw;
+        height: 70vh;
+        background-color: #112031;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .section2_A {
+        width: 100vw;
+        height: 35vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section2_B {
+        width: 100vw;
+        height: 35vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titleA {
+        position: absolute;
+        top: 12.5em;
+        color: #fff;
+        display: block;
+        font-size: 0.6em;
+        margin: 0.5em 0 0.25em 0;
+        font-weight: bold;
+    }
+
+    .titleB {
+        position: absolute;
+        top: 32.5em;
+        color: #fff;
+        display: block;
+        font-size: 0.6em;
+        margin: 0.5em 0 0.25em 0;
+        font-weight: bold;
+    }
+
+    .wrapper {
+        border: 1px solid #ffffff;
+        height: 6em;
+        width: 6em;
+        position: absolute;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 600px;
+        perspective-origin: 50%;
+    }
+
+    .image-cube {
+        height: 7em;
+        width: 7em;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: 2s;
+    }
+
+    .image-cube div {
+        height: 7em;
+        width: 7em;
+        position: absolute;
+    }
+
+    .image-cubeA {
+        height: 7em;
+        width: 7em;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: 2s;
+    }
+
+    .image-cubeA div {
+        height: 7em;
+        width: 7em;
+        position: absolute;
+    }
+
+    img {
+        width: 100%;
+        height:100%;
+        transform: translateZ(0);
+    }
+
+    .front {
+        transform: translateZ(3.5em);
+    }
+
+    .right {
+        transform: rotateY(-270deg) translateX(3.5em);
+        transform-origin: 100% 0;
+    }
+
+    .back {
+        transform: translateZ(-3.5em) rotateY(180deg);
+    }
+
+    .left {
+        transform: rotateY(270deg) translateX(-3.5em);
+        transform-origin: 0 50%;
+    }
+
+    .btns {
+        margin-top: 1.5em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btns button {
+        background-color: transparent;
+        color: #fff;
+        border: 3px solid #fff;
+        padding: 0.25em 1.5em;
+        border-radius: 30px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+
+    /* ** ***** ####################     Inicio Sección 3    #################### ***** ** */
+
+    .section3 {
+        width: 100vw;
+        height: 10vh;
+        background-color: #020;
+    }
+
+    /* ** ***** ####################     Text Box Superior    #################### ***** ** */
+
+    .text-box{
+        background:#112031;
+        text-align: center;
+        overflow-x: hidden;
+        height: 10vh;
+        padding: 0.3em 1em;
+    }
+
+    .text-box h2 {
+        font-size: 0.7em;
+        font-weight: 600;
+        font-family: 'Courier New', Courier, monospace;
+        color: #fff;
+        position: relative;
+    }
+
+    .text-box h2::before, h2::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    .text-box h2::before {
+        background: #112031;
+        animation:  type 3s steps(25) 1s forwards infinite;
+        width: 100%;
+        
+    }
+
+    .text-box span {
+        color: rgb(9, 214, 241);
+        font-weight: 900;
+        font-size: 0.8em;
+    }
+
+    .text-box h2::after {
+        opacity: 1;
+        width: 0.2em; 
+        background: #fff;
+        color:#fff;
+        animation:  type 3s steps(25) 1s forwards infinite,
+                    blink 0.6s steps(15) infinite;
+    }
+
+    @keyframes type {
+        to {
+        left: 110%;
+        }
+    }
+
     @keyframes blink {
         0% , 50%{
         opacity: 0;
