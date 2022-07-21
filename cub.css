@@ -2842,6 +2842,41 @@ img {
 
 }
 
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+/* ** ***** ##############          Código      Responsive         ############## ***** ** */
+/* ** ***** ##############   max-width: 320px, max-height: 570px   ############## ***** ** */
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+
+@media screen and (max-width: 320px), (max-height: 570px) {
+
+    body {
+        background-color: rgb(30, 250, 12);
+    }
+
+    /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
+
+    .titleA {
+        position: absolute;
+        top: 11em;
+        color: #fff;
+        display: block;
+        font-size: 0.6em;
+        margin: 0.5em 0 0.25em 0;
+        font-weight: bold;
+    }
+
+    .titleB {
+        position: absolute;
+        top: 32.5em;
+        color: #fff;
+        display: block;
+        font-size: 0.6em;
+        margin: 0.5em 0 0.25em 0;
+        font-weight: bold;
+    }
+
+}
+
 
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 /* ** ***** ##############          Código      Responsive         ############## ***** ** */
