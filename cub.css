@@ -1833,6 +1833,7 @@ img {
 
 }
 
+
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 /* ** ***** ##############          Código      Responsive         ############## ***** ** */
 /* ** ***** ##############   max-width: 800px, max-height: 1280px   ############## ***** ** */
@@ -1867,6 +1868,7 @@ img {
     }
 
 }
+
 
 
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
@@ -2177,7 +2179,7 @@ img {
 
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 /* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############   max-width: 768px, max-height: 1024px   ############## ***** ** */
+/* ** ***** ##############   max-width: 800px, max-height: 1280px   ############## ***** ** */
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 
 @media screen and (max-width: 768px), (max-height: 1024px) {
@@ -2842,12 +2844,13 @@ img {
 }
 
 
+
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 /* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############   max-width: 400px, max-height: 800px   ############## ***** ** */
+/* ** ***** ##############   max-width: 480px, max-height: 900px   ############## ***** ** */
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 
-@media screen and (max-width: 400px), (max-height: 800px) {
+@media screen and (max-width: 480px), (max-height: 900px) {
 
     body {
         background-color: rgb(30, 250, 12);
@@ -2857,7 +2860,7 @@ img {
 
     .titleA {
         position: absolute;
-        top: 18em;
+        top: 20em;
         color: #fff;
         display: block;
         font-size: 0.6em;
@@ -2867,7 +2870,7 @@ img {
 
     .titleB {
         position: absolute;
-        top: 48em;
+        top: 55em;
         color: #fff;
         display: block;
         font-size: 0.6em;
@@ -2879,10 +2882,81 @@ img {
 
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 /* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############   max-width: 360px, max-height: 640px   ############## ***** ** */
+/* ** ***** ##############   max-width: 450px, max-height: 815px   ############## ***** ** */
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 
-@media screen and (max-width: 360px), (max-height: 640px) {
+@media screen and (max-width: 450px), (max-height: 815px) {
+
+    body {
+        background-color: rgb(30, 250, 12);
+    }
+
+    /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
+
+    .titleA {
+        position: absolute;
+        top: 19em;
+        color: #fff;
+        display: block;
+        font-size: 0.6em;
+        margin: 0.5em 0 0.25em 0;
+        font-weight: bold;
+    }
+
+    .titleB {
+        position: absolute;
+        top: 50em;
+        color: #fff;
+        display: block;
+        font-size: 0.6em;
+        margin: 0.5em 0 0.25em 0;
+        font-weight: bold;
+    }
+
+}
+
+
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+/* ** ***** ##############          Código      Responsive         ############## ***** ** */
+/* ** ***** ##############   max-width: 410px, max-height: 730px   ############## ***** ** */
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+
+@media screen and (max-width: 410px), (max-height: 730px) {
+
+    body {
+        background-color: rgb(30, 250, 12);
+    }
+
+    /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
+
+    .titleA {
+        position: absolute;
+        top: 16em;
+        color: #fff;
+        display: block;
+        font-size: 0.6em;
+        margin: 0.5em 0 0.25em 0;
+        font-weight: bold;
+    }
+
+    .titleB {
+        position: absolute;
+        top: 44em;
+        color: #fff;
+        display: block;
+        font-size: 0.6em;
+        margin: 0.5em 0 0.25em 0;
+        font-weight: bold;
+    }
+
+}
+
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+/* ** ***** ##############          Código      Responsive         ############## ***** ** */
+/* ** ***** ##############   max-width: 360px, max-height: 675px   ############## ***** ** */
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+
+@media screen and (max-width: 360px), (max-height: 675px) {
 
     body {
         background-color: rgb(30, 250, 12);
@@ -2914,10 +2988,10 @@ img {
 
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 /* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############   max-width: 320px, max-height: 570px   ############## ***** ** */
+/* ** ***** ##############   max-width: 320px, max-height: 560px   ############## ***** ** */
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 
-@media screen and (max-width: 320px), (max-height: 570px) {
+@media screen and (max-width: 320px), (max-height: 560px) {
 
     body {
         background-color: rgb(30, 250, 12);
@@ -2946,6 +3020,7 @@ img {
     }
 
 }
+
 
 
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
