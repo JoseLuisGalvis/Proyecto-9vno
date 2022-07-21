@@ -1835,7 +1835,7 @@ img {
 
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 /* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############   max-width: 320px, max-height: 570px   ############## ***** ** */
+/* ** ***** ##############   max-width: 800px, max-height: 1280px   ############## ***** ** */
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 
 @media screen and (max-width: 800px), (max-height: 1280px) {
@@ -1848,7 +1848,7 @@ img {
 
     .titleA {
         position: absolute;
-        top: 16em;
+        top: 24em;
         color: #fff;
         display: block;
         font-size: 0.6em;
@@ -1858,7 +1858,7 @@ img {
 
     .titleB {
         position: absolute;
-        top: 16em;
+        top: 24em;
         color: #fff;
         display: block;
         font-size: 0.6em;
