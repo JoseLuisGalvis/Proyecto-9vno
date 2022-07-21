@@ -2177,6 +2177,41 @@ img {
 
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 /* ** ***** ##############          Código      Responsive         ############## ***** ** */
+/* ** ***** ##############   max-width: 768px, max-height: 1024px   ############## ***** ** */
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+
+@media screen and (max-width: 768px), (max-height: 1024px) {
+
+    body {
+        background-color: rgb(30, 250, 12);
+    }
+
+    /* ** ***** ####################     Inicio Sección 2    #################### ***** ** */
+
+    .titleA {
+        position: absolute;
+        top: 24em;
+        color: #fff;
+        display: block;
+        font-size: 0.6em;
+        margin: 0.5em 0 0.25em 0;
+        font-weight: bold;
+    }
+
+    .titleB {
+        position: absolute;
+        top: 24em;
+        color: #fff;
+        display: block;
+        font-size: 0.6em;
+        margin: 0.5em 0 0.25em 0;
+        font-weight: bold;
+    }
+
+}
+
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+/* ** ***** ##############          Código      Responsive         ############## ***** ** */
 /* ** ***** ##############              Escritorio 600           ############## ***** ** */
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 
