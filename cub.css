@@ -2774,10 +2774,10 @@ img {
 
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 /* ** ***** ##############          Código      Responsive         ############## ***** ** */
-/* ** ***** ##############              Escritorio 560            ############## ***** ** */
+/* ** ***** ##############   max-width: 400px, max-height: 800px   ############## ***** ** */
 /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
 
-@media all and (max-width: 400px) and (max-height: 800px) {
+@media screen and (max-width: 400px), (max-height: 800px) {
 
     body {
         background-color: rgb(30, 250, 12);
